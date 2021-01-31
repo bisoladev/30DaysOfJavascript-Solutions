@@ -1,2 +1,5 @@
 # 30DaysOfJavascript-Daily-tasks-done-by-me
- Assignments done by me while taking the 30DaysOfJavaScript challenge
+
+Currently taking a 30 Days JavaScript Challenge by @Asabeneh
+
+All daily assignments and projects will be done here.
