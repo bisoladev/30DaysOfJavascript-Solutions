@@ -1,3 +1,5 @@
+//Level 1 Exercise
+
 //Question 1
 let challenge = '30 Days Of JavaScript';
 
@@ -81,3 +83,64 @@ console.log(incomplete.concat(' JavaScript'));
 
 //Question 25
 console.log(challenge.repeat(2));
+
+//Level 2 Exercise
+
+//Question 1
+let paragraph1 = "The quote 'There is no exercise better for the heart than reaching down\
+and lifting people up.' by John Holmes teaches us to help one another.";
+
+console.log(paragraph1);
+
+//Question 2
+let paragraph2 = "Love is not patronizing and charity isn't about pity, it is about love.\
+ Charity and love are the same with charity you give love, so don't just give money \
+ but reach out your hand instead."
+
+ console.log(paragraph2);
+
+ //Question 3
+ console.log('10' === 10);
+
+ let num = '10';
+ let numInt = parseInt(num);
+ console.log(numInt);
+
+ //Question 4
+ console.log(9.8 === 10);
+
+ console.log(Math.round(9.8));
+
+ //Question 5
+ let firstWord = "Python";
+ let secondWord = "Jargon";
+ console.log(firstWord.includes('on'));
+ console.log(secondWord.includes('on'));
+
+ //Question 6
+ let confirmation ="I hope this course is not full of jargon. Check if jargon is in the \
+ sentence."
+
+ console.log(confirmation.includes('jargon'));
+
+ //Question 7
+let randomNum = Math.random();        
+let numBtnZeroAndHundred = randomNum * 101;
+
+console.log(numBtnZeroAndHundred);       
+
+let randomNumRoundToFloor = Math.floor(numBtnZeroAndHundred);
+console.log(randomNumRoundToFloor);
+
+//Question 8
+function getRandomInt (min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+console.log(getRandomInt(50, 100));
+
+//Question 9
+console.log(getRandomInt(0, 225));
+
+//Question 10
+
