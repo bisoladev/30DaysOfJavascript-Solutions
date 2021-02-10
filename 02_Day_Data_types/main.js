@@ -157,3 +157,79 @@ console.log('5\t1\t5\t25\t125');
 //Question 12
 let cutOut= sentence.substr(30, 24);
 console.log(cutOut);
+
+//Level 3
+
+//Question 1
+let loveStatement = "Love is the best thing in this world. Some found their love and some \
+are still looking for their love.";
+
+let lovePattern = /love/gi;
+let loveCount = loveStatement.match(lovePattern).length;
+console.log(loveCount);
+
+//Question 2
+let becausePattern = /because/gi;
+let becauseCount = sentence.match(becausePattern).length;
+console.log(becauseCount);
+
+//Question 3
+const badSentence = '%I $am@% a %tea@cher%, &and& I lo%#ve %te@a@ching%;.\
+ The@re $is no@th@ing; &as& mo@re rewarding as educa@ting &and& @emp%o@weri@ng peo@ple. \
+ ;I found tea@ching m%o@re interesting tha@n any ot#her %jo@bs. %Do@es thi%s mo@tiv#ate yo@u \
+ to be a tea@cher!? %Th#is 30#Days&OfJavaScript &is al@so $the $resu@lt of &love& of tea&ching.';
+
+const hash = /#/g;
+const percent =/%/g;
+const dollar = /\$/g;
+const at = /@/g;
+const and = /&/g;
+const semicolon = /\;/g;
+
+const replacedSymbols = badSentence.replace(hash, '').replace(percent, '').replace(dollar, '').replace(at, '').replace(and, '').replace(semicolon, '');
+
+console.log(replacedSymbols);
+
+console.log(findMostRepeatedWord(replacedSymbols));
+
+function findMostRepeatedWord(replacedSymbols) {
+  let words = replacedSymbols.match(/\w+/g);
+  console.log(words);
+
+  let occurances = {};
+
+  for (let word of words) {
+    if (occurances[word]) {
+      occurances[word]++;
+    } else {
+      occurances[word] = 1;
+    }
+  }
+
+  console.log(occurances); 
+
+  let max = 0;
+  let mostRepeatedWord = '';
+
+  for (let word of words) {
+    if (occurances[word] > max) {
+      max = occurances[word];
+      mostRepeatedWord = word;
+    }
+  }
+
+  return mostRepeatedWord;
+}
+
+//Question 4
+const income = 'He earns 5000 euro from salary per month, 10000 euro annual bonus, 15000 euro online courses per month.';
+
+const digitPattern = /\d+/g;
+let digitWords = income.match(digitPattern);
+
+let inc1 = parseInt(digitWords[0]);
+let inc2 = parseInt(digitWords[1]);
+let inc3 = parseInt(digitWords[2]);
+
+let totalIncome = (inc1 * 12) + inc2 + (inc3 * 12);
+console.log(`Total Income: ${totalIncome}`);
