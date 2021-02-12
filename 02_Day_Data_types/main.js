@@ -222,7 +222,8 @@ function findMostRepeatedWord(replacedSymbols) {
 }
 
 //Question 4
-const income = 'He earns 5000 euro from salary per month, 10000 euro annual bonus, 15000 euro online courses per month.';
+const income = 'He earns 5000 euro from salary per month, \
+10000 euro annual bonus, 15000 euro online courses per month.';
 
 const digitPattern = /\d+/g;
 let digitWords = income.match(digitPattern);
