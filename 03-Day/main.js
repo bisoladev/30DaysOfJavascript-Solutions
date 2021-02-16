@@ -67,12 +67,28 @@ console.log(!(lang2.includes('on'))); //false
 
 //Exercise 7
 
+const fullDate = new Date();
+console.log(fullDate); //Sat Feb 13 2021 22:24:27 GMT+0100 (West Africa Standard Time)
 
-/*Use the Date object to do the following activities
-   1. What is the year today?
-   2. What is the month today as a number?
-   3. What is the date today?
-   4. What is the day today as a number?
-   5. What is the hours now?
-   6. What is the minutes now?
-   7. Find out the numbers of seconds elapsed from January 1, 1970 to now*/
+//To get present year
+console.log(fullDate.getFullYear()); //2021
+
+//To get present month
+console.log(fullDate.getMonth() + 1); //2
+
+//To get present date of the month
+console.log(fullDate.getDate()); //13
+
+//To get present day of the week
+console.log(fullDate.getDay()); //6
+
+//To get present hour of the day
+console.log(fullDate.getHours()); //22
+
+//To get present minute of the hour
+console.log(fullDate.getMinutes()); //38
+
+//To get the numbers of seconds elaspsed from January 1, 1970 to now
+console.log(fullDate.getTime()); //1613252259560
+
+
