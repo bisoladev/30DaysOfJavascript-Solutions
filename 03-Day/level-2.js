@@ -1,4 +1,3 @@
-/*
 //Exercise 1
 
 let base = prompt('Enter number', 'Input base value');
@@ -106,7 +105,7 @@ let userBirthYearInt= parseInt(userBirthYear);
 
 let userAge;
 userAge = 2021 - userBirthYearInt;
-yearsRemaining = 18 - userAge;
+let yearsRemaining = 18 - userAge;
 
 userAge >= 18 
     ? alert(`You are ${userAge}. You are old enough to drive`) 
@@ -121,8 +120,7 @@ let totalSecondsLived = numberOfYearsInt * 2592000 * 12;
 
 numberOfYearsInt <= 100
     ? console.log(`You have lived ${totalSecondsLived}`)
-    : alert('Input a number less than 100');*/
-
+    : alert('Input a number less than 100');
 
 //Exercise 15
 const now = new Date()
