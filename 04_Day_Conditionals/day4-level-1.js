@@ -1,5 +1,5 @@
 //Exercise 1
-let userAge = prompt('Enter your age', '');
+let userAge = prompt('Enter your age', 'age eligibility');
 let userAgeInt = parseInt(userAge);
 
 let yearsRemaining = 18 - userAge;
@@ -8,24 +8,46 @@ userAge >= 18
     ? alert(`You are ${userAge}. You are old enough to drive`) 
     : alert (`You are ${userAge}. You will be allowed to drive after ${yearsRemaining} years`);
 
-/*1. Get user input using prompt(“Enter your age:”). If user is 18 or older , 
-give feedback:'You are old enough to drive' but if not 18 give another feedback 
-stating to  wait for the number of years he neds to turn 18.
+//Exercise 2
+let myAge = 22;
+let yourAge = prompt('Enter your age', 'age difference');
+let yourAgeInt = parseInt(yourAge);
 
-   ```sh
-   Enter your age: 30
-   You are old enough to drive.
-   
-   Enter your age:15
-   You are left with 3 years to drive.
-   ```
+let myAgeDifference = myAge - yourAgeInt;
+let yourAgeDifference = yourAgeInt - myAge;
 
-1. Compare the values of myAge and yourAge using if … else. Based on the 
-comparison and log the result to console stating who is older (me or you). 
-Use prompt(“Enter your age:”) to get the age as input.
+if(myAge > yourAgeInt) {
+    console.log(`I am ${myAgeDifference} older than you`)
+} else if (yourAgeInt > myAge) {
+    console.log(`You are ${yourAgeDifference} older than me`)
+} else {
+    console.log(`Your age is the same as mine`);
+}
 
-   ```sh
-   Enter your age: 30
-   You are 5 years older than me.
-   ```
-*/
+//Exercise 3
+let a = 5;
+let b = 3;
+
+//using if else statement
+if(a > b) {
+    console.log(`${a} is greater than ${b}`);
+} else if(b > a) {
+    console.log(`${b} is greater than ${a}`)
+} else {
+    console.log(`${a} is equal to ${b}`);
+}
+
+//using tenary condition
+a > b
+    ? console.log(`${a} is greater than ${b}`)
+    : b > a ? console.log(`${b} is greater than ${a}`)
+    : console.log(`${a} is equal to ${b}`);
+
+//Exercise 4
+
+let userInput = prompt('Enter number', 'even or odd number check');
+let userInputInt = parseInt(userInput);
+
+userInputInt % 2 === 0 
+    ? console.log (`${userInputInt} is an even number`)
+    : console.log (`${userInputInt} is an odd number`);
