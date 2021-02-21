@@ -75,12 +75,11 @@ console.log(itCompanies.sort());
 console.log(itCompanies.reverse());
 
 //Exercise 17
-console.log(itCompanies.slice(0,3));
+const techCompanies = ['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon'];
+console.log(techCompanies.splice(0,3));
+console.log(techCompanies);
 
-
-/*15. Sort the array using _sort()_ method
-16. Reverse the array using _reverse()_ method
-17. Slice out the first 3 companies from the array
+/*
 18. Slice out the last 3 companies from the array
 19. Slice out the middle IT company or companies from the array
 20. Remove the first IT company from the array
