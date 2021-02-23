@@ -9,3 +9,4 @@ console.log(removedSymbols);
 let words = removedSymbols.match(/\w+/g);
 console.log(words);
 console.log(words.length);
+
