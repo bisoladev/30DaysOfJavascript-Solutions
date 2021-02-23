@@ -94,10 +94,9 @@ console.log(newTechCompanies.splice(0,1));
 console.log(newTechCompanies);
 console.log(newTechCompanies.splice(2,1));
 
+//Exercise 22
+console.log(newTechCompanies.splice(4,1));
 
-18. /*Slice out the last 3 companies from the array
-19. Slice out the middle IT company or companies from the array
-20. Remove the first IT company from the array
-21. Remove the middle IT company or companies from the array
-22. Remove the last IT company from the array
-23. Remove all IT companies*/
+//Exercise 23
+console.log(newTechCompanies.splice(0,4));
+console.log(newTechCompanies);
