@@ -79,8 +79,23 @@ const techCompanies = ['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracl
 console.log(techCompanies.splice(0,3));
 console.log(techCompanies);
 
-/*
-18. Slice out the last 3 companies from the array
+//Exercise 18
+console.log(techCompanies.slice(1,4));
+
+//Exercise 19
+const newTechCompanies = ['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon'];
+console.log(newTechCompanies.slice(3,4));
+console.log(newTechCompanies);
+
+//Exercise 20
+console.log(newTechCompanies.splice(0,1));
+
+//Exercise 21
+console.log(newTechCompanies);
+console.log(newTechCompanies.splice(2,1));
+
+
+18. /*Slice out the last 3 companies from the array
 19. Slice out the middle IT company or companies from the array
 20. Remove the first IT company from the array
 21. Remove the middle IT company or companies from the array
