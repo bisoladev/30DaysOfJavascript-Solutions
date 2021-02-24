@@ -24,7 +24,14 @@ const countries = [
   console.log(countries.slice(0,10));
 
   //Exercise 2 - Level 3
-  
+  countries.sort();
+  console.log(countries);
+  middleCountryIndex = Math.floor(countries.length/2);
+  console.log(middleCountryIndex);
+
+  console.log(countries[5]);
+
+
 
 
 
