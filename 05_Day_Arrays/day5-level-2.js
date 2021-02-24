@@ -24,4 +24,9 @@ console.log(shoppingCart);
 shoppingCart[3] = 'Green Tea';
 console.log(shoppingCart);
 
+//Exercise 6
+const frontEnd = ['HTML', 'CSS', 'JS', 'React', 'Redux'];
+const backEnd = ['Node','Express', 'MongoDB'];
 
+const fullStack = frontEnd.concat(backEnd);
+console.log(fullStack);
