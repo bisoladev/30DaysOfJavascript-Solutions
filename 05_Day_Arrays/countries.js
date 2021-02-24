@@ -31,8 +31,20 @@ const countries = [
 
   console.log(countries[5]);
 
+  //Exercise 3 - Level 3
+  console.log(countries);
+  let split1 = countries.slice(0, Math.floor(countries.length/2));
+  console.log(split1);
+  let split2 = countries.slice(Math.floor(countries.length/2) , countries.length);
+  console.log(split2);
 
-
+  if ( (countries.length) % 2  == 0 ) { 
+    console.log(`${split1} and ${split2}`);
+  }
+  else{
+    split1.push('Nigeria');
+    console.log(`${split1} and ${split2}`);
+  }
 
 
  
