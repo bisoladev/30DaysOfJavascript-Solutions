@@ -13,11 +13,13 @@ console.log(average);
 range = ages[9] - ages[0];
 console.log(range);
 
-let minMinusAve = Maths.abs(ages[0] - average);
-let maxMinusAve = Maths.abs(ages[9] - average);
+let minMinusAve = Math.round(Math.abs(ages[0] - average));
+let maxMinusAve = Math.round(Math.abs(ages[9] - average));
 
 if(minMinusAve > maxMinusAve) {
-    console.log(`${minMinusAve} is greater than ${maxMinusAve}`);
+    console.log(`${minMinusAve} (Min value minus Average) is greater than ${maxMinusAve} 
+    (Max value minus Average)`);
 } else if (maxMinusAve > minMinusAve) {
-    console.log(`${maxMinusAve} is greater than ${minMinusAve}`);
-}
+    console.log(`${maxMinusAve} (Max value minus Average) is greater than ${minMinusAve} 
+    (Min value minus Average)`);
+}s
