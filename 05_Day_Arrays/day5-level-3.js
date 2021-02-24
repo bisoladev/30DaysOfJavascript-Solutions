@@ -22,4 +22,4 @@ if(minMinusAve > maxMinusAve) {
 } else if (maxMinusAve > minMinusAve) {
     console.log(`${maxMinusAve} (Max value minus Average) is greater than ${minMinusAve} 
     (Min value minus Average)`);
-}s
+}
