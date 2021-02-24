@@ -21,21 +21,11 @@ const countries = [
   }
 
   //Exercise 1 - Level 3
-  const newCountries = [
-    'Albania',
-    'Bolivia',
-    'Canada',
-    'Denmark',
-    'Ethiopia',
-    'Finland',
-    'Germany',
-    'Hungary',
-    'Ireland',
-    'Japan',
-    'Kenya'
-  ];
+  console.log(countries.slice(0,10));
 
-  newCountries.slice(0,11);
-  console.log(newCountries);
+  //Exercise 2 - Level 3
+  
+
+
 
  
