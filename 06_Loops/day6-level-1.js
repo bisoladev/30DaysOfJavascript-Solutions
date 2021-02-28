@@ -42,3 +42,22 @@ let n = 5;
 for(i = 0; i <= n; i++) {
     console.log(i);
 }
+
+//Exercise 4
+for(i = 1; i <= 7; i++) {
+    console.log("#".repeat(i));
+ }
+
+ const hash = ['#', '#', '#', '#', '#', '#', '#']
+const newArr = []
+for(let i = 0; i < hash.length; i++){
+  newArr.push(hash[i])
+  console.log(newArr.toString());
+}
+
+let str = "";
+for (let i = 0; i < 7; i++) {
+    str += "#";
+    console.log(str)
+}
+
