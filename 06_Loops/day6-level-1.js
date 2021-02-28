@@ -36,3 +36,9 @@ do {
   console.log(y)
   y--
 } while (y >= 0)
+
+//Exercise 3
+let n = 5;
+for(i = 0; i <= n; i++) {
+    console.log(i);
+}
