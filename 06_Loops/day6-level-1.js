@@ -71,5 +71,11 @@ for(i = 0; i <= 10; i++) {
   console.log(`${i} ${i ** 2} ${i ** 3}`);
 }
 
+//Exercise 7
+for(i = 0; i <= 100; i=i + 2) {
+  console.log(i);
+}
+
+
 
 
