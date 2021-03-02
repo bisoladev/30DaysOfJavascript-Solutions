@@ -1,4 +1,4 @@
-//Exercise 1
+/*//Exercise 1
 //for-loop
 for (i = 0; i < 11; i++) {
     console.log(i);
@@ -81,6 +81,20 @@ for(i = 1; i <=100; i = i + 2) {
   console.log(i);
 }
 
+*/
 
+//Exercise 9
+for (let i = 0; i<= 100; i++) {
 
-
+  let notAPrimeNo = false;
+  for (let j = 2; j <= i; j++) {
+      if (i%j==0 && j!==i) {
+          notAPrimeNo = true;
+      }
+  }
+  if (i < 2) {
+      continue;
+  } else if (!notAPrimeNo) {
+    console.log(i);
+  }
+}
