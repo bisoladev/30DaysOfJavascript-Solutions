@@ -105,19 +105,18 @@ for(let i = 0; i <=100; i++){
   console.log(x);
 }
 
-
-*/
-
-
-
-let c = 0;
 //Exercise 11 
 for(let i = 0; i <=100; i++){
-  //console.log(i);
-  let b = 0;
-  for(let j = 0; j <=i; j=j+2) {
-    console.log(i,j);
+   let b = 0;
+  for(let j = 2; j <=i; j=j+2) {
     b = b + j;
-    //console.log(b);
   }
+    let c = 0;
+  for(let k = 1; k <=i; k=k+2) {
+    c = c + k;
+  }
+  console.log(`The sum of even numbers is ${b}`);
+  console.log(`The sum of odd numbers is ${c}`);
 }
+
+*/
