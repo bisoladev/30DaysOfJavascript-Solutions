@@ -81,8 +81,6 @@ for(i = 1; i <=100; i = i + 2) {
   console.log(i);
 }
 
-*/
-
 //Exercise 9
 for (let i = 0; i<= 100; i++) {
 
@@ -96,5 +94,30 @@ for (let i = 0; i<= 100; i++) {
       continue;
   } else if (!notAPrimeNo) {
     console.log(i);
+  }
+}
+
+//Exercise 10
+let x = 0;
+for(let i = 0; i <=100; i++){
+  console.log(i);
+  x = x + i;
+  console.log(x);
+}
+
+
+*/
+
+
+
+let c = 0;
+//Exercise 11 
+for(let i = 0; i <=100; i++){
+  //console.log(i);
+  let b = 0;
+  for(let j = 0; j <=i; j=j+2) {
+    console.log(i,j);
+    b = b + j;
+    //console.log(b);
   }
 }
