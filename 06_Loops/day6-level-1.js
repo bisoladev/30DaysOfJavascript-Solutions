@@ -119,4 +119,19 @@ for(let i = 0; i <=100; i++){
   console.log(`The sum of odd numbers is ${c}`);
 }
 
+//Exercise 12 
+for(let i = 0; i <=100; i++){
+  const arr = [];
+  let b = 0;
+ for(let j = 2; j <=i; j=j+2) {
+   b = b + j;
+ }
+   let c = 0;
+ for(let k = 1; k <=i; k=k+2) {
+   c = c + k;
+ }
+  arr.push(b,c);
+  console.log (arr);
+}
+
 */
