@@ -152,4 +152,11 @@ for (let i = 0; i < 5; i++) {
    console.log(uniqueRandomNums);
 }
 
-//Exercise 15
+// Exercise 15
+let chars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXTZabcdefghiklmnopqrstuvwxyz";
+let randChars = "";
+for (let i = 0; i < 6; i++) {
+    let random = Math.floor(Math.random() * chars.length);
+    randChars += chars[random];
+}
+console.log(randChars);
