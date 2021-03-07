@@ -133,5 +133,23 @@ for(let i = 0; i <=100; i++){
   arr.push(b,c);
   console.log (arr);
 }
-
 */
+
+//Exercise 13
+let randomNums = [];
+for (let i = 0; i < 5; i++) {
+   randomNums.push(Math.floor(Math.random() * 100));
+   console.log(randomNums);
+}
+
+//Exercise 14
+let uniqueRandomNums = [];
+for (let i = 0; i < 5; i++) {
+   let random = Math.floor(Math.PI * Math.random() * 100);
+   if(uniqueRandomNums.indexOf(random) === -1) {
+     uniqueRandomNums.push(random);
+   }
+   console.log(uniqueRandomNums);
+}
+
+//Exercise 15
