@@ -40,7 +40,7 @@ const countries = [
     'Kenya'
   ]
 const newCountry = [];
-for(country of countries) {
+for(const country of countries) {
     newCountry.push(country.toUpperCase());
     console.log(newCountry);
 }
@@ -61,12 +61,11 @@ const countries = [
     'Kenya'
   ]
 const countryLength = [];
-for(country of countries) {
+for(const country of countries) {
     countryLength.push(country.length);
     console.log(countryLength);
 } 
-*/
-/*
+
 //Exercise 6
 const countries = [
     'Albania',
@@ -82,12 +81,16 @@ const countries = [
     'Kenya'
   ]
 
-const newCountry = [];
-for(coun) {
-    let country = newCountry.push(countries[i]);
-    let abbrv= newCountry.push(countries[i].toUpperCase().slice(0,3));
-    let lengthOf = newCountry.push(countries[i].length);
-    console.log(newCountry);
+const countryArray = [];
+for(const country of countries) {
+    let abbrv= country.slice(0,3).toUpperCase();
+    let lengthOf = country.length;
+    countryArray.push([country, abbrv, lengthOf]);
+}
+
+for(arr of countryArray) {
+    console.log(arr);
 }
 
 */
+
