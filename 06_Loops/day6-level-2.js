@@ -48,3 +48,8 @@ for(let i = 0; i < countries.length; i++) {
 }
 
 //Exercise 5
+const newCountry = [];
+for(let i = 0; i < countries.length; i++) {
+    newCountry.push(countries[i].length);
+    console.log(newCountry);
+}
