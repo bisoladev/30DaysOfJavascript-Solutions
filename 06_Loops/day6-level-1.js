@@ -133,7 +133,6 @@ for(let i = 0; i <=100; i++){
   arr.push(b,c);
   console.log (arr);
 }
-*/
 
 //Exercise 13
 let randomNums = [];
@@ -159,4 +158,5 @@ for (let i = 0; i < 6; i++) {
     let random = Math.floor(Math.random() * chars.length);
     randChars += chars[random];
 }
-console.log(randChars);
+console.log(randChars); */
+
