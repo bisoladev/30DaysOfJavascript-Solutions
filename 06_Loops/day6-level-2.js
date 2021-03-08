@@ -15,8 +15,6 @@ for(let i = 0; i < 1; i++) {
     console.log(hexChars);
 }
 
-*/
-
 //Exercise 3
 
 for(let i = 0; i < 1; i++) {
@@ -42,14 +40,54 @@ const countries = [
     'Kenya'
   ]
 const newCountry = [];
-for(let i = 0; i < countries.length; i++) {
-    newCountry.push(countries[i].toUpperCase());
+for(country of countries) {
+    newCountry.push(country.toUpperCase());
     console.log(newCountry);
 }
 
+
 //Exercise 5
+const countries = [
+    'Albania',
+    'Bolivia',
+    'Canada',
+    'Denmark',
+    'Ethiopia',
+    'Finland',
+    'Germany',
+    'Hungary',
+    'Ireland',
+    'Japan',
+    'Kenya'
+  ]
+const countryLength = [];
+for(country of countries) {
+    countryLength.push(country.length);
+    console.log(countryLength);
+} 
+*/
+/*
+//Exercise 6
+const countries = [
+    'Albania',
+    'Bolivia',
+    'Canada',
+    'Denmark',
+    'Ethiopia',
+    'Finland',
+    'Germany',
+    'Hungary',
+    'Ireland',
+    'Japan',
+    'Kenya'
+  ]
+
 const newCountry = [];
-for(let i = 0; i < countries.length; i++) {
-    newCountry.push(countries[i].length);
+for(coun) {
+    let country = newCountry.push(countries[i]);
+    let abbrv= newCountry.push(countries[i].toUpperCase().slice(0,3));
+    let lengthOf = newCountry.push(countries[i].length);
     console.log(newCountry);
 }
+
+*/
