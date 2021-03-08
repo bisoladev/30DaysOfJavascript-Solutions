@@ -43,6 +43,8 @@ const countries = [
   ]
 const newCountry = [];
 for(let i = 0; i < countries.length; i++) {
-    newCountry.push(countries[i].length);
+    newCountry.push(countries[i].toUpperCase());
     console.log(newCountry);
 }
+
+//Exercise 5
