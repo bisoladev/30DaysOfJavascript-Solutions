@@ -177,6 +177,34 @@ const countries = [
        console.log(country);
  }
 
+ //Exercise 10
+ const countries = [
+  'Albania',
+  'Bolivia',
+  'Canada',
+  'Denmark',
+  'Ethiopia',
+  'Finland',
+  'Germany',
+  'Hungary',
+  'Ireland',
+  'Japan',
+  'Kenya'
+]
+
+let maxLength = 0;
+let maxLenCountry;
+for (const country of countries) {
+   if(country.length > maxLength) {
+      maxLength = country.length;
+      maxLenCountry = country;
+   }
+} 
+
+console.log(maxLenCountry);
+
   */
+
+
 
 
