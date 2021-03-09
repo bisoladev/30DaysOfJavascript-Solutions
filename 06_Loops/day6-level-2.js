@@ -92,8 +92,6 @@ for(arr of countryArray) {
     console.log(arr);
 }
 
-*/
-
 //Exercise 7
 const countries = [
     'Albania',
@@ -117,4 +115,37 @@ for(const country of countries) {
     }
         console.log(countryLand);
 }
+
+
+//Exercise 8
+const countries = [
+    'Albania',
+    'Bolivia',
+    'Canada',
+    'Denmark',
+    'Ethiopia',
+    'Finland',
+    'Germany',
+    'Hungary',
+    'Ireland',
+    'Japan',
+    'Kenya'
+  ]
+  let noCountry = true;
+  let landCountriesList = [];
+  
+  for(const i of countries) {
+     if(i.includes('land')) {
+        landCountriesList.push([i]);
+        noCountry = false;
+     }
+  } 
+  if(noCountry) {
+     console.log("All these countries are without land");
+  } else {
+    for(const country of landCountriesList) 
+       console.log(country);
+ }
+
+ */
 
