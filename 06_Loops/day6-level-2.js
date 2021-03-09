@@ -157,11 +157,21 @@ for (tech of webTechs) {
     longestTechStr = tech;
   }
 }
-*/
-
 console.log(longestTechStr);
 
 
+
+//Exercise 14
+webTechsArr = [];
+for(tech of webTechs) {
+  techUppCase = tech.toUpperCase();
+  techLength =tech.length;
+  webTechsArr.push([techUppCase, techLength]);
+}
+
+console.log(webTechsArr);
+
+*/
 
 
 
