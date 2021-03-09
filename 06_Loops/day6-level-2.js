@@ -147,5 +147,36 @@ const countries = [
        console.log(country);
  }
 
- */
+ //Exercise 9
+ const countries = [
+    'Albania',
+    'Bolivia',
+    'Canada',
+    'Denmark',
+    'Ethiopia',
+    'Finland',
+    'Germany',
+    'Hungary',
+    'Ireland',
+    'Japan',
+    'Kenya'
+  ]
+  let countryWithoutIA = true;
+  let iaCountriesList = [];
+  
+  for(const i of countries) {
+     if(i.endsWith('ia')) {
+        iaCountriesList.push([i]);
+        countryWithoutIA = false;
+     }
+  } 
+  if(countryWithoutIA) {
+     console.log("All these countries end without ia");
+  } else {
+    for(const country of iaCountriesList) 
+       console.log(country);
+ }
+
+  */
+
 
