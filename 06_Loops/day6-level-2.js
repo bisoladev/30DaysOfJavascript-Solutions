@@ -1,3 +1,17 @@
+const countries = [
+  'Albania',
+  'Bolivia',
+  'Canada',
+  'Denmark',
+  'Ethiopia',
+  'Finland',
+  'Germany',
+  'Hungary',
+  'Ireland',
+  'Japan',
+  'Kenya'
+]
+
 //Exercise 1
 /*let randChars = '';
 for(let i = 0; i < 2; i++) {
@@ -26,19 +40,6 @@ for(let i = 0; i < 1; i++) {
 }
 
 //Exercise 4
-const countries = [
-    'Albania',
-    'Bolivia',
-    'Canada',
-    'Denmark',
-    'Ethiopia',
-    'Finland',
-    'Germany',
-    'Hungary',
-    'Ireland',
-    'Japan',
-    'Kenya'
-  ]
 const newCountry = [];
 for(const country of countries) {
     newCountry.push(country.toUpperCase());
@@ -47,19 +48,6 @@ for(const country of countries) {
 
 
 //Exercise 5
-const countries = [
-    'Albania',
-    'Bolivia',
-    'Canada',
-    'Denmark',
-    'Ethiopia',
-    'Finland',
-    'Germany',
-    'Hungary',
-    'Ireland',
-    'Japan',
-    'Kenya'
-  ]
 const countryLength = [];
 for(const country of countries) {
     countryLength.push(country.length);
@@ -67,20 +55,6 @@ for(const country of countries) {
 } 
 
 //Exercise 6
-const countries = [
-    'Albania',
-    'Bolivia',
-    'Canada',
-    'Denmark',
-    'Ethiopia',
-    'Finland',
-    'Germany',
-    'Hungary',
-    'Ireland',
-    'Japan',
-    'Kenya'
-  ]
-
 const countryArray = [];
 for(const country of countries) {
     let abbrv= country.slice(0,3).toUpperCase();
@@ -93,19 +67,6 @@ for(arr of countryArray) {
 }
 
 //Exercise 7
-const countries = [
-    'Albania',
-    'Bolivia',
-    'Canada',
-    'Denmark',
-    'Ethiopia',
-    'Finland',
-    'Germany',
-    'Hungary',
-    'Ireland',
-    'Japan',
-    'Kenya'
-  ]
 const countryLand = [];
 for(const country of countries) {
     if (country.indexOf('land') === -1){
@@ -116,21 +77,7 @@ for(const country of countries) {
         console.log(countryLand);
 }
 
-
 //Exercise 8
-const countries = [
-    'Albania',
-    'Bolivia',
-    'Canada',
-    'Denmark',
-    'Ethiopia',
-    'Finland',
-    'Germany',
-    'Hungary',
-    'Ireland',
-    'Japan',
-    'Kenya'
-  ]
   let noCountry = true;
   let landCountriesList = [];
   
@@ -148,19 +95,6 @@ const countries = [
  }
 
  //Exercise 9
- const countries = [
-    'Albania',
-    'Bolivia',
-    'Canada',
-    'Denmark',
-    'Ethiopia',
-    'Finland',
-    'Germany',
-    'Hungary',
-    'Ireland',
-    'Japan',
-    'Kenya'
-  ]
   let countryWithoutIA = true;
   let iaCountriesList = [];
   
@@ -176,22 +110,9 @@ const countries = [
     for(const country of iaCountriesList) 
        console.log(country);
  }
+   
 
  //Exercise 10
- const countries = [
-  'Albania',
-  'Bolivia',
-  'Canada',
-  'Denmark',
-  'Ethiopia',
-  'Finland',
-  'Germany',
-  'Hungary',
-  'Ireland',
-  'Japan',
-  'Kenya'
-]
-
 let maxLength = 0;
 let maxLenCountry;
 for (const country of countries) {
@@ -202,8 +123,21 @@ for (const country of countries) {
 } 
 
 console.log(maxLenCountry);
+*/
 
-  */
+//Exercise 11
+const countryWithFiveArr = [];
+
+for(const country of countries) {
+  if(country.length == 5) {
+    countryWithFiveArr.push(country)
+  } else {
+    continue;
+  }
+}
+
+console.log(countryWithFiveArr);
+
 
 
 
