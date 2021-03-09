@@ -94,3 +94,27 @@ for(arr of countryArray) {
 
 */
 
+//Exercise 7
+const countries = [
+    'Albania',
+    'Bolivia',
+    'Canada',
+    'Denmark',
+    'Ethiopia',
+    'Finland',
+    'Germany',
+    'Hungary',
+    'Ireland',
+    'Japan',
+    'Kenya'
+  ]
+const countryLand = [];
+for(const country of countries) {
+    if (country.indexOf('land') === -1){
+        console.log('All these countries are without land');
+    } else {
+       countryLand.push(country);
+    }
+        console.log(countryLand);
+}
+
