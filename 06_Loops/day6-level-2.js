@@ -12,6 +12,16 @@ const countries = [
   'Kenya'
 ]
 
+const webTechs = [
+  'HTML',
+  'CSS',
+  'JavaScript',
+  'React',
+  'Redux',
+  'Node',
+  'MongoDB'
+]
+
 //Exercise 1
 /*let randChars = '';
 for(let i = 0; i < 2; i++) {
@@ -121,9 +131,7 @@ for (const country of countries) {
       maxLenCountry = country;
    }
 } 
-
 console.log(maxLenCountry);
-*/
 
 //Exercise 11
 const countryWithFiveArr = [];
@@ -137,6 +145,21 @@ for(const country of countries) {
 }
 
 console.log(countryWithFiveArr);
+
+
+//Exercise 12
+let longestTechLength = 0;
+let longestTechStr;
+
+for (tech of webTechs) {
+  if (tech.length > longestTechLength) {
+    longestTechLength = tech.length;
+    longestTechStr = tech;
+  }
+}
+*/
+
+console.log(longestTechStr);
 
 
 
