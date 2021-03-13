@@ -77,17 +77,6 @@ for(arr of countryArray) {
 }
 
 //Exercise 7
-const countryLand = [];
-for(const country of countries) {
-    if (country.indexOf('land') === -1){
-        console.log('All these countries are without land');
-    } else {
-       countryLand.push(country);
-    }
-        console.log(countryLand);
-}
-
-//Exercise 8
   let noCountry = true;
   let landCountriesList = [];
   
@@ -104,7 +93,7 @@ for(const country of countries) {
        console.log(country);
  }
 
- //Exercise 9
+ //Exercise 8
   let countryWithoutIA = true;
   let iaCountriesList = [];
   
@@ -122,7 +111,7 @@ for(const country of countries) {
  }
    
 
- //Exercise 10
+ //Exercise 9
 let maxLength = 0;
 let maxLenCountry;
 for (const country of countries) {
@@ -133,7 +122,7 @@ for (const country of countries) {
 } 
 console.log(maxLenCountry);
 
-//Exercise 11
+//Exercise 10
 const countryWithFiveArr = [];
 
 for(const country of countries) {
@@ -147,7 +136,7 @@ for(const country of countries) {
 console.log(countryWithFiveArr);
 
 
-//Exercise 12
+//Exercise 11
 let longestTechLength = 0;
 let longestTechStr;
 
@@ -161,7 +150,7 @@ console.log(longestTechStr);
 
 
 
-//Exercise 14
+//Exercise 12
 webTechsArr = [];
 for(tech of webTechs) {
   techUppCase = tech.toUpperCase();
@@ -172,6 +161,9 @@ for(tech of webTechs) {
 console.log(webTechsArr);
 
 */
+
+//Exercise 13
+
 
 
 
