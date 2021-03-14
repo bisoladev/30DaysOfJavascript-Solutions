@@ -1,4 +1,4 @@
-/*//Exercise 1
+//Exercise 1
 //for-loop
 for (i = 0; i < 11; i++) {
     console.log(i);
@@ -44,6 +44,13 @@ for(i = 0; i <= n; i++) {
 }
 
 //Exercise 4
+let str = "";
+for (let i = 0; i < 7; i++) {
+    str += "#";
+    console.log(str)
+}
+
+/* Alternative solution
 for(i = 1; i <= 7; i++) {
     console.log("#".repeat(i));
  }
@@ -54,12 +61,7 @@ for(let i = 0; i < hash.length; i++){
   newArr.push(hash[i])
   console.log(newArr.toString());
 }
-
-let str = "";
-for (let i = 0; i < 7; i++) {
-    str += "#";
-    console.log(str)
-}
+*/
 
 //Exercise 5
 for(i=0; i <=10; i++) {
@@ -98,12 +100,11 @@ for (let i = 0; i<= 100; i++) {
 }
 
 //Exercise 10
-let x = 0;
+let d = 0;
 for(let i = 0; i <=100; i++){
-  console.log(i);
-  x = x + i;
-  console.log(x);
+  d = d + i;
 }
+console.log(d);
 
 //Exercise 11 
 for(let i = 0; i <=100; i++){
@@ -138,8 +139,8 @@ for(let i = 0; i <=100; i++){
 let randomNums = [];
 for (let i = 0; i < 5; i++) {
    randomNums.push(Math.floor(Math.random() * 100));
-   console.log(randomNums);
 }
+console.log(randomNums);
 
 //Exercise 14
 let uniqueRandomNums = [];
@@ -148,8 +149,8 @@ for (let i = 0; i < 5; i++) {
    if(uniqueRandomNums.indexOf(random) === -1) {
      uniqueRandomNums.push(random);
    }
-   console.log(uniqueRandomNums);
 }
+console.log(uniqueRandomNums);
 
 // Exercise 15
 let chars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXTZabcdefghiklmnopqrstuvwxyz";
@@ -158,5 +159,5 @@ for (let i = 0; i < 6; i++) {
     let random = Math.floor(Math.random() * chars.length);
     randChars += chars[random];
 }
-console.log(randChars); */
+console.log(randChars); 
 
