@@ -40,6 +40,7 @@ for(const country of countries) {
 }
 
 //Exercise 5
+//Find the country containing the hightest number of characters in the [countries array]
 let maxLength = 0;
 let maxLengthCountry;
 for(const country of countries) {
@@ -49,4 +50,10 @@ for(const country of countries) {
     }
 }
 console.log(maxLengthCountry);
+
+//Exercise 6
+/*Extract all the countries contain the word 'land' from the [countries array]
+and print it as array */
+
+//Solution same as exercise 4
 
