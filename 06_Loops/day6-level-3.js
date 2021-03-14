@@ -23,3 +23,19 @@ console.log(sortedWebTechs);
 const sortedMernStack = [];
 sortedMernStack.push(mernStack.sort());
 console.log(sortedMernStack);
+
+//Exercise 4
+/*Extract all the countries containing the word 'land' from the [countries array]
+and print it as array*/
+
+landArray = [];
+
+for(country of countries) {
+    if(country.includes('land')) {
+        landArray.push(country);
+        console.log(landArray);
+    } else {
+        continue;
+    }
+}
+
