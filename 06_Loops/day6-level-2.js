@@ -180,4 +180,17 @@ for(tech of techStack) {
 }
 */
 
+//Exercise 15
+
+const fruits = ['banana', 'orange', 'mango', 'lemon'];
+const reversedFruits = [];
+
+for(let i = fruits.length-1; i >= 0; i--) {
+  reversedFruits.push(fruits[i]);
+}
+
+console.log(reversedFruits);
+
+
+
 
