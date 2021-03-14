@@ -71,3 +71,17 @@ for(const country of countries) {
     }
 }
 
+//Exercise 8
+/*Extract all the countries containing two or more words from the 
+[countries array] and print it as array */
+
+const countriesChar = [];
+for(const country of countries) {
+    if(country.length > 2) {
+        countriesChar.push(country);
+    } else {
+        continue;
+    }
+}
+console.log(countriesChar);
+
