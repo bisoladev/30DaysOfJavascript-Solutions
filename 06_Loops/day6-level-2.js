@@ -178,18 +178,32 @@ const techStack = ["HTML", "CSS", "JS", "React", "Redux", "Node", "Express", "Mo
 for(tech of techStack) {
   console.log(tech);
 }
-*/
 
 //Exercise 15
-
 const fruits = ['banana', 'orange', 'mango', 'lemon'];
 const reversedFruits = [];
 
 for(let i = fruits.length-1; i >= 0; i--) {
   reversedFruits.push(fruits[i]);
 }
-
 console.log(reversedFruits);
+
+//Exercise 16
+const fullStackArr = [];
+const fullStack = [
+  ['HTML', 'CSS', 'JS', 'React'],
+  ['Node', 'Express', 'MongoDB']
+]
+let mergedArr = []; 
+
+mergedArr = mergedArr.concat.apply(mergedArr, fullStack);
+
+for(tech of mergedArr) {
+  console.log(tech);
+}
+
+*/
+
 
 
 
