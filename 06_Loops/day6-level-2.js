@@ -1,27 +1,3 @@
-const countries = [
-  'Albania',
-  'Bolivia',
-  'Canada',
-  'Denmark',
-  'Ethiopia',
-  'Finland',
-  'Germany',
-  'Hungary',
-  'Ireland',
-  'Japan',
-  'Kenya'
-]
-
-const webTechs = [
-  'HTML',
-  'CSS',
-  'JavaScript',
-  'React',
-  'Redux',
-  'Node',
-  'MongoDB'
-]
-
 //Exercise 1
 /*let randChars = '';
 for(let i = 0; i < 2; i++) {
@@ -121,6 +97,7 @@ for (const country of countries) {
    }
 } 
 console.log(maxLenCountry);
+*/
 
 //Exercise 10
 const countryWithFiveArr = [];
@@ -135,7 +112,7 @@ for(const country of countries) {
 
 console.log(countryWithFiveArr);
 
-
+/*
 //Exercise 11
 let longestTechLength = 0;
 let longestTechStr;
