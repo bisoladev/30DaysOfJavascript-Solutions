@@ -57,3 +57,17 @@ and print it as array */
 
 //Solution same as exercise 4
 
+//Exercise 7
+/*Extract all the countries containing only four characters from the [countries array]
+and print it as array*/
+
+fourLengthCountry = [];
+for(const country of countries) {
+    if(country.length === 4) {
+        fourLengthCountry.push(country);
+        console.log(fourLengthCountry);
+    } else {
+        console.log('No country in the countries array has only 4 charaacters.');
+    }
+}
+
