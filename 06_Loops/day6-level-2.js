@@ -160,10 +160,17 @@ for(tech of webTechs) {
 
 console.log(webTechsArr);
 
-*/
-
 //Exercise 13
 
+const mernAcro = [];
+const mernStack = ['MongoDB', 'Express', 'React', 'Node'];
+
+for(mern of mernStack) {
+  mernAcro.push(mern.slice(0,1));
+}
+
+console.log(mernAcro);
+*/
 
 
 
