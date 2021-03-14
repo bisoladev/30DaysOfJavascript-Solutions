@@ -166,11 +166,18 @@ const mernAcro = [];
 const mernStack = ['MongoDB', 'Express', 'React', 'Node'];
 
 for(mern of mernStack) {
-  mernAcro.push(mern.slice(0,1));
+  mernAcro.push(mern[0]);
 }
-
-console.log(mernAcro);
 */
+console.log(mernAcro.join(''));
+
+//Exercise 14
+
+const techStack = ["HTML", "CSS", "JS", "React", "Redux", "Node", "Express", "MongoDB"];
+
+for(tech of techStack) {
+  console.log(tech);
+}
 
 
 
