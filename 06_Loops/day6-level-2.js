@@ -1,5 +1,5 @@
 //Exercise 1
-/*let randChars = '';
+let randChars = '';
 for(let i = 0; i < 2; i++) {
  let random = Math.random().toString(36).substr(2, 5);
  randChars += random;
@@ -29,16 +29,18 @@ for(let i = 0; i < 1; i++) {
 const newCountry = [];
 for(const country of countries) {
     newCountry.push(country.toUpperCase());
-    console.log(newCountry);
 }
+
+console.log(newCountry);
 
 
 //Exercise 5
 const countryLength = [];
 for(const country of countries) {
     countryLength.push(country.length);
-    console.log(countryLength);
-} 
+}
+console.log(countryLength);
+
 
 //Exercise 6
 const countryArray = [];
@@ -97,7 +99,6 @@ for (const country of countries) {
    }
 } 
 console.log(maxLenCountry);
-*/
 
 //Exercise 10
 const countryWithFiveArr = [];
@@ -112,7 +113,6 @@ for(const country of countries) {
 
 console.log(countryWithFiveArr);
 
-/*
 //Exercise 11
 let longestTechLength = 0;
 let longestTechStr;
@@ -179,7 +179,6 @@ for(tech of mergedArr) {
   console.log(tech);
 }
 
-*/
 
 
 
