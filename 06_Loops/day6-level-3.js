@@ -4,7 +4,7 @@ const mernStack = ['MongoDB', 'Express', 'React', 'Node'];
 //Copy countries array(Avoid mutation)
 
 countriesCopy = [];
-for(country of countries) {
+for(const country of countries) {
     countriesCopy.push(country);
 }
 console.log(countriesCopy);
@@ -30,7 +30,7 @@ and print it as array*/
 
 landArray = [];
 
-for(country of countries) {
+for(const country of countries) {
     if(country.includes('land')) {
         landArray.push(country);
         console.log(landArray);
@@ -38,4 +38,15 @@ for(country of countries) {
         continue;
     }
 }
+
+//Exercise 5
+let maxLength = 0;
+let maxLengthCountry;
+for(const country of countries) {
+    if(country.length > maxLength) {
+        maxLength = country.length;
+        maxLengthCountry = country;
+    }
+}
+console.log(maxLengthCountry);
 
