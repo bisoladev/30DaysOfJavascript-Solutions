@@ -96,5 +96,8 @@ for(const country of reversedCountries) {
 } 
 console.log(capReverseCountries);
 
+/* Level 3 completed. Find the countries and webTechs array in their respective country.js
+and webTechs.js files*/
+
 
 
