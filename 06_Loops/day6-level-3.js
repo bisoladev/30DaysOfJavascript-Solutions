@@ -73,7 +73,7 @@ for(const country of countries) {
 
 //Exercise 8
 /*Extract all the countries containing two or more words from the 
-[countries array] and print it as array */
+[countries array] and print it as array. */
 
 const countriesChar = [];
 for(const country of countries) {
@@ -84,4 +84,17 @@ for(const country of countries) {
     }
 }
 console.log(countriesChar);
+
+//Exercise 9
+//Reverse the [countries array] and capitalize each country and store it as an array.
+
+let reversedCountries = countries.reverse();
+let capReverseCountries = [];
+
+for(const country of reversedCountries) {
+   capReverseCountries.push(country.toUpperCase());   
+} 
+console.log(capReverseCountries);
+
+
 
