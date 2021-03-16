@@ -194,3 +194,12 @@ function checkSeason(month) {
 } console.log(checkSeason("DecEMBer"));
 
 //Exercise 15
+/*Math.max returns its largest argument. Write a function findMax that takes three arguments and returns their maximum with out using Math.max method. */
+function findMax(a, b, c) {
+    let max = 0;
+    for(const num of arguments) {
+       if (num > max) max = num;
+    } return max;
+ } 
+ 
+console.log(`The max number is ${findMax(1, 1.5, 2)}`);
