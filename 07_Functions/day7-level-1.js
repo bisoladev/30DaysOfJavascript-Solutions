@@ -121,3 +121,27 @@ function celsiusToFahrenheit(celsius) {
 }
 
 console.log(`0 degrees celsius converted to fahrenheit is ${celsiusToFahrenheit(0)}degrees F.`);
+
+//Exercise 13
+/*Body mass index(BMI) is calculated as follows: bmi = weight(Kg) / (height x height) in meters. Write a function which calculates _bmi_. BMI is used to broadly define different weight groups in adults 20 years old or older.Check if a person is _underweight, normal, overweight_ or _obese_ based the information given below.
+
+- The same groups apply to both men and women.
+- _Underweight_: BMI is less than 18.5
+- _Normal weight_: BMI is 18.5 to 24.9
+- _Overweight_: BMI is 25 to 29.9
+- _Obese_: BMI is 30 or more */
+
+function checkBMI(weight, height) {
+    bmi = Math.round((weight / (height ^ 2)));
+    if (bmi < 18.5) {
+        return `you are underweight`;
+    } else if (bmi <= 24.9) {
+        return `you are of normal weight`;
+    } else if (bmi <= 29.9) {
+        return `you are overweight`;
+    } else if (bmi >= 30) {
+        return `you are obese`;
+    }
+}
+console.log(checkBMI(70, 1.68));
+
