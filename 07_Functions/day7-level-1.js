@@ -203,3 +203,5 @@ function findMax(a, b, c) {
  } 
  
 console.log(`The max number is ${findMax(1, 1.5, 2)}`);
+
+//Level 1 completed**
