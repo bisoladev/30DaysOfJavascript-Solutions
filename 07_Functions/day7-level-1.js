@@ -76,7 +76,7 @@ console.log(((`The area of circle is ${areaOfCircle(3)}`)));
 Write a function which calculates _circumOfCircle_ */
 
 function circumferenceOfCircle(r, pi = 3.14) {
-    let calcCirOfCircle = Math.round(pi * r * r);
+    let calcCirOfCircle = Math.round(2 * pi * r);
     return calcCirOfCircle;
 }
 console.log(((`The circumference of circle is ${circumferenceOfCircle(3)}`)));
