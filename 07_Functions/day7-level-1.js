@@ -20,3 +20,13 @@ function fullName(fName, lName) {
 }
 
 console.log(fullName('Bisola', 'Onaolapo'));
+
+//Exercise 3
+//Declare a function _addNumbers_ and it takes two two parameters and it returns sum.
+
+function addNumbers(num1, num2) {
+    let sum = num1 + num2;
+    return sum;
+}
+
+console.log(addNumbers(2,8));
