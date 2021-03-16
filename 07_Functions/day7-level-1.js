@@ -69,7 +69,7 @@ function areaOfCircle(r, pi = 3.14) {
     return calcAreaOfCircle;
 }
 
-console.log(((`The area of circle is ${areaOfCircle(3)}`)));
+console.log((`The area of circle is ${areaOfCircle(3)}`));
 
 //Exercise 8 
 /* Circumference of a circle is calculated as follows: _circumference = 2πr_. 
@@ -79,4 +79,14 @@ function circumferenceOfCircle(r, pi = 3.14) {
     let calcCirOfCircle = Math.round(2 * pi * r);
     return calcCirOfCircle;
 }
-console.log(((`The circumference of circle is ${circumferenceOfCircle(3)}`)));
+console.log((`The circumference of circle is ${circumferenceOfCircle(3)}`));
+
+//Exercise 9
+/*Density of a substance is calculated as follows:_density= mass/volume_. Write a function which calculates _density_. */
+
+function density(mass, volume) {
+    calcDensity = mass / volume;
+    return calcDensity;
+}
+
+console.log(`The density of the substance is ${density(20, 5)}`);
