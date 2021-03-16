@@ -145,3 +145,52 @@ function checkBMI(weight, height) {
 }
 console.log(checkBMI(70, 1.68));
 
+//Exercise 14
+/*Write a function called _checkSeason_, it takes a month parameter and returns the season:Autumn, Winter, Spring or Summer. */
+
+function checkSeasons(month){
+    month = month.toLowerCase()
+    if(["september","october","november"].includes(month)){
+      return "The season is Autumn"
+    }else if(["december","january","february"].includes(month)){
+      return "The season is Winter"
+    }else if(["march","april","may"].includes(month)){
+      return "The season is Spring"
+    }
+    
+    return "The season is Summer"
+  }
+
+  console.log(checkSeasons('MaY'));
+
+function checkSeason(month) {
+   let season;
+   
+   switch (month.toLowerCase()) {
+      case "september":
+      case "october":
+      case "november":
+         season = "Autumn";
+         break;
+   
+      case "december":
+      case "january":
+      case "february":
+         season = "Winter";
+         break;
+   
+      case "march":
+      case "april":
+      case "may":
+         season = "Spring";
+   
+      case "june":
+      case "july":
+      case "august":
+         season = "Summer";
+         break;
+   }
+   return season;
+} console.log(checkSeason("DecEMBer"));
+
+//Exercise 15
