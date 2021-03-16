@@ -26,7 +26,7 @@ function addNumbers(num1, num2) {
     let sum = num1 + num2;
     return sum;
 }
-console.log((`(The sum of two numbers are ${addNumbers(2,8)}`));
+console.log(`(The sum of two numbers are ${addNumbers(2,8)}`);
 
 //Exercise 4 
 /*An area of a rectangle is calculated as follows: _area = length x width_.
@@ -36,7 +36,7 @@ function areaOfRectangle(length, width) {
     let calcAreaOfRectangle = length * width;
     return calcAreaOfRectangle;
 }
-console.log((`The area of rectangle is ${areaOfRectangle(5, 10)}`));
+console.log(`The area of rectangle is ${areaOfRectangle(5, 10)}`);
 
 //Exercise 5
 /*A perimeter of a rectangle is calculated as follows: _perimeter= 2x(length + width)_. 
@@ -47,7 +47,7 @@ function perimeterOfRectangle(length, width) {
     return calcPeriOfRectangle;
 }
 
-console.log((`The perimeter of rectangle ${perimeterOfRectangle(2,4)}`));
+console.log(`The perimeter of rectangle ${perimeterOfRectangle(2,4)}`);
 
 //Exercise 6
 /* A volume of a rectangular prism is calculated as follows: _volume = length x width x height_.
@@ -58,7 +58,7 @@ function volumeOfPrism(length, width, height) {
     return calcVolumeOfPrism;
 }
 
-console.log((`The volume of prism is ${volumeOfPrism(2, 3 ,4)}`));
+console.log(`The volume of prism is ${volumeOfPrism(2, 3 ,4)}`);
 
 //Exercise 7
 /*Area of a circle is calculated as follows: _area = π x r x r_. 
@@ -69,7 +69,7 @@ function areaOfCircle(r, pi = 3.14) {
     return calcAreaOfCircle;
 }
 
-console.log((`The area of circle is ${areaOfCircle(3)}`));
+console.log(`The area of circle is ${areaOfCircle(3)}`);
 
 //Exercise 8 
 /* Circumference of a circle is calculated as follows: _circumference = 2πr_. 
@@ -79,7 +79,7 @@ function circumferenceOfCircle(r, pi = 3.14) {
     let calcCirOfCircle = Math.round(2 * pi * r);
     return calcCirOfCircle;
 }
-console.log((`The circumference of circle is ${circumferenceOfCircle(3)}`));
+console.log(`The circumference of circle is ${circumferenceOfCircle(3)}`);
 
 //Exercise 9
 /*Density of a substance is calculated as follows:_density= mass/volume_. Write a function which calculates _density_. */
@@ -90,3 +90,13 @@ function density(mass, volume) {
 }
 
 console.log(`The density of the substance is ${density(20, 5)}`);
+
+//Exercise 10
+/*Speed is calculated by dividing the total distance covered by a moving object divided by the total amount of time taken. Write a function which calculates a speed of a moving object, _speed_. */
+
+function speed(distance, time) {
+    calcSpeed = distance / time;
+    return calcSpeed;
+}
+
+console.log(`Current speed is ${speed(80, 5)}km/hr.`);
