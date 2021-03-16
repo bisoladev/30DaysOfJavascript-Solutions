@@ -100,3 +100,13 @@ function speed(distance, time) {
 }
 
 console.log(`Current speed is ${speed(80, 5)}km/hr.`);
+
+//Exercise 11
+/*Weight of a substance is calculated as follows: _weight = mass x gravity_. Write a function which calculates _weight_. */
+
+function weight(mass, gravity = 9.8) {
+    calcWeight = Math.round(mass * gravity);
+    return calcWeight;
+}
+
+console.log(`The total weight is ${weight(50)}N.`);
