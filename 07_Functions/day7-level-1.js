@@ -110,3 +110,14 @@ function weight(mass, gravity = 9.8) {
 }
 
 console.log(`The total weight is ${weight(50)}N.`);
+
+//Exercise 12
+/*Temperature in oC can be converted to oF using this formula: _oF = (oC x 9/5) + 32_. Write a function which convert oC to oF _convertCelciusToFahrenheit_. */
+
+
+function celsiusToFahrenheit(celsius) {
+    fahrenheitTemp = (celsius * (9/5)) + 32;
+    return fahrenheitTemp;
+}
+
+console.log(`0 degrees celsius converted to fahrenheit is ${celsiusToFahrenheit(0)}degrees F.`);
