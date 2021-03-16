@@ -79,5 +79,4 @@ function circumferenceOfCircle(r, pi = 3.14) {
     let calcCirOfCircle = Math.round(pi * r * r);
     return calcCirOfCircle;
 }
-
 console.log(((`The circumference of circle is ${circumferenceOfCircle(3)}`)));
