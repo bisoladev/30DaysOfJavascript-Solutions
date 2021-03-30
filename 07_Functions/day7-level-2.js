@@ -62,7 +62,7 @@ const solveQuadEquation = (a,b,c) => {
     c_plus = " + "+c;
     let currentResult = solveQuadEquation(a,b,c);
 
-    document.querySelector(".results").style.display = "visible";
+    document.querySelector(".x1").style.display = "visible";
     document.querySelector(".x1").innerHTML = `${a}x2 + ${b < 0? - (b*-1) : b_plus}x ${c < 0? - (c*-1) : c_plus} = 0 : ${currentResult}`;
 
   }
