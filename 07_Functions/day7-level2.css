@@ -1,19 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
+
 * {
+  font-family: "Poppins", sans-serif;
   box-sizing: border-box;
+}
+
+div.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 div.wrapper h2 {
   text-align: center;
-  margin-top: 8%;
+  /* margin-top: 8%; */
 }
 
 div.wrapper form {
   text-align: center;
-  margin: 2%;
+  /* margin: 2%; */
 }
 
 div.wrapper form .form__input {
-  margin-top: 2%;
+  /* margin-top: 2%; */
 }
 
 div.wrapper form .form__input label {
@@ -22,11 +32,14 @@ div.wrapper form .form__input label {
 
 div.wrapper form .form__input input {
   padding: 4px 10px;
-  margin-left: 1%;
+  border: none;
+  background-color: #e5e5e5;
+  border-radius: 2px;
+  /* margin-left: 1%; */
 }
 
 div.wrapper form button {
-  margin-top: 3%;
+  /* margin-top: 3%; */
   color: white;
   background-color: #090e69;
   border: none;
