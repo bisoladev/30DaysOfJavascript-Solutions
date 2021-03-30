@@ -34,13 +34,21 @@ div.wrapper form button {
   border-radius: 2px;
 }
 
-div.results {
+/* div.results {
   border: 2px solid bisque;
   width: 35%;
   margin-left: 32.5%;
-  /* visibility: hidden; */
+  visibility: hidden;
 }
 
 div.results h1 {
   text-align: center;
+} */
+
+h1.x1 {
+  text-align: center;
+  border: 2px solid bisque;
+  width: 35%;
+  margin-left: 32.5%;
+  visibility: hidden;
 }
