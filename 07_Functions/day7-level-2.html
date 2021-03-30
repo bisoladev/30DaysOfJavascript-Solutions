@@ -4,8 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Day6-level2</title>
+    <link rel="stylesheet" href="day7-level2.css">
 </head>
 <body>
+    <div class="wrapper">
+        <h2>Calculate the values of x in the quadratic equation: ax2 + bx + c = 0</h2>
+        <form action="" method="get" class="form-section">
+            <div class="form__input">
+                <label for="a">Enter value for a: </label>
+                <input type="number" id="a" required>
+            </div>
+            <div class="form__input">
+                <label for="b">Enter value for b: </label>
+                <input type="number" id="b" required>
+            </div>
+            <div class="form__input">
+                <label for="num">Enter value for c: </label>
+                <input type="number" id="c" required>
+            </div>
+            <div>
+                <button type="button" id="button">Click to see your answer!</button>
+            </div>
+        </form>
+
+    </div>
+
+    <div id="results" class="results">
+        <h1 id="x1">x1: <span>0</span></h1>
+    </div>
+
+
     <script src="./day7-level-2.js"></script>
 </body>
 </html>
