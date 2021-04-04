@@ -124,3 +124,16 @@ const reverseArray = (array) => {
 }
 
 reverseArray(['1','2','4','5','6']);
+
+//Exercise 7
+// Declare a function name _capitalizeArray_. It takes array as a parameter and it returns the - capitalizedarray.
+
+const capitalizeArray = (array) => {
+  const newArr = [];
+  for(arr of array) {
+    newArr.push(arr.toUpperCase());
+  }
+  console.log(newArr);
+}
+
+capitalizeArray(['bisola', 'john', 'musa', 'rose']);
