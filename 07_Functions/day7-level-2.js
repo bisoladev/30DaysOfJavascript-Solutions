@@ -137,3 +137,15 @@ const capitalizeArray = (array) => {
 }
 
 capitalizeArray(['bisola', 'john', 'musa', 'rose']);
+
+//Exercise 8 
+// Declare a function name _addItem_. It takes an item parameter and it returns an array after adding the item.
+
+const addItem = (item) => {
+  itemArray = [];
+  itemArray.push(item);
+  console.log(itemArray);
+}
+
+addItem('mango');
+addItem('monkey');
