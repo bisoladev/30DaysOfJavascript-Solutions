@@ -14,16 +14,16 @@ div.wrapper {
 
 div.wrapper h2 {
   text-align: center;
-  /* margin-top: 8%; */
+  margin-top: 8%;
 }
 
 div.wrapper form {
   text-align: center;
-  /* margin: 2%; */
+  margin: 2%;
 }
 
 div.wrapper form .form__input {
-  /* margin-top: 2%; */
+  margin-top: 2%;
 }
 
 div.wrapper form .form__input label {
@@ -35,11 +35,11 @@ div.wrapper form .form__input input {
   border: none;
   background-color: #e5e5e5;
   border-radius: 2px;
-  /* margin-left: 1%; */
+  margin-left: 1%;
 }
 
 div.wrapper form button {
-  /* margin-top: 3%; */
+  margin-top: 3%;
   color: white;
   background-color: #090e69;
   border: none;
@@ -62,6 +62,5 @@ h1.x1 {
   text-align: center;
   border: 2px solid bisque;
   width: 35%;
-  margin-left: 32.5%;
   visibility: hidden;
 }

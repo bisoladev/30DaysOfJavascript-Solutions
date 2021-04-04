@@ -58,12 +58,12 @@ const solveQuadEquation = (a,b,c) => {
     b = parseInt(b);
     c = parseInt(c);
 
-    b_plus = " + "+b;
+    
     c_plus = " + "+c;
     let currentResult = solveQuadEquation(a,b,c);
 
     document.querySelector(".x1").style.visibility = "visible";
-    document.querySelector(".x1").innerHTML = `${a}x2 + ${b < 0? - (b*-1) : b_plus}x ${c < 0? - (c*-1) : c_plus} = 0 : ${currentResult}`;
+    document.querySelector(".x1").innerHTML = `${a}x2 + ${b}x + ${c < 0? - (c*-1) : c_plus} = 0 : ${currentResult}`;
 
   }
   ) 
@@ -78,3 +78,19 @@ const solveQuadEquation = (a,b,c) => {
 // }
 
 // printArray([1,2,3,4,5,6]);
+
+//Exercise 4
+// Write a function name _showDateTime_ which shows time in this format: 08/01/2020 04:08 using the Date object.
+
+const showDateTime = () => {
+  const now = new Date();
+  const year = now.getFullYear(); // return year
+  const month = now.getMonth() + 1; // return month(0 - 11)
+  const date = now.getDate(); // return date (1 - 31)
+  const hours = now.getHours(); // return number (0 - 23)
+  const minutes = now.getMinutes(); // return number (0 -59)
+
+  return console.log(`${date}/${month}/${year} ${hours}:${minutes}`); // 4/1/2020 0:56
+}
+
+showDateTime();
