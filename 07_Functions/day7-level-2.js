@@ -94,3 +94,15 @@ const showDateTime = () => {
 }
 
 showDateTime();
+
+//Exercise 5
+// Declare a function name _swapValues_. This function swaps value of x to y.
+
+const swapValues = (x,y) => {
+  let m = x;
+  x = y;
+  y = m;
+  return console.log(`x = ${x}, y = ${y}`);
+}
+
+swapValues(16,4);
