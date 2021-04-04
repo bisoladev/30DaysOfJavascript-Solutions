@@ -85,10 +85,15 @@ const solveQuadEquation = (a,b,c) => {
 const showDateTime = () => {
   const now = new Date();
   const year = now.getFullYear(); // return year
-  const month = now.getMonth() + 1; // return month(0 - 11)
-  const date = now.getDate(); // return date (1 - 31)
-  const hours = now.getHours(); // return number (0 - 23)
-  const minutes = now.getMinutes(); // return number (0 -59)
+  let month = now.getMonth() + 1; // return month(0 - 11)
+  let date = now.getDate(); // return date (1 - 31)
+  let hours = now.getHours(); // return number (0 - 23)
+  let minutes = now.getMinutes(); // return number (0 -59)
+
+  date = date < 10 ? '0' + date.toString(): date;
+  month = month < 10 ? '0' + month.toString(): month;
+  hours = hours < 10 ? '0' + hours.toString(): hours;
+  minutes = minutes < 10 ? '0' + minutes.toString(): minutes;
 
   return console.log(`${date}/${month}/${year} ${hours}:${minutes}`); // 4/1/2020 0:56
 }
@@ -106,3 +111,16 @@ const swapValues = (x,y) => {
 }
 
 swapValues(16,4);
+
+//Exercise 6
+// Declare a function name _reverseArray_. It takes array as a parameter and it returns the reverse of the array (don't use method).
+
+const reverseArray = (array) => {
+  let newArray = [];
+  for (let i = array.length-1; i >= 0; i--) {
+    newArray.push(array[i]);
+  }
+  console.log(newArray);
+}
+
+reverseArray(['1','2','4','5','6']);
