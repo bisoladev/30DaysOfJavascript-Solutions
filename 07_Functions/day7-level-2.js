@@ -249,3 +249,14 @@ const sumAllNums = (...args) => {
 
 console.log(sumAllNums(1, 2, 3, 4));
 
+//Exercise 15
+// Write a function which generates a _randomUserIp_.
+
+const randomUserIp = () => {
+  let ip = (Math.floor(Math.random() * 255) + 1)+"."+(Math.floor(Math.random() * 255))+"."+(Math.floor(Math.random() * 255))+"."+(Math.floor(Math.random() * 255));
+console.log(ip)
+}
+
+randomUserIp();
+
+
