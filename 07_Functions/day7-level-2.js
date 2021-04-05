@@ -149,3 +149,14 @@ const addItem = (item) => {
 
 addItem('mango');
 addItem('monkey');
+
+//Exercise 9
+// Declare a function name _removeItem_. It takes an index parameter and it returns an array after removing an item.
+
+const removeItem = (index, array) => {
+  const editedArray = [];
+  editedArray.push(array.splice(index, 1));
+  console.log(editedArray);
+}
+
+removeItem(0, ['apple', 'mango', 'orange','banana']);
