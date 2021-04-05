@@ -160,3 +160,24 @@ const removeItem = (index, array) => {
 }
 
 removeItem(0, ['apple', 'mango', 'orange','banana']);
+
+//Exercise 10
+// Declare a function name _sumOfNumbers_. It takes a number parameter and it adds all the numbers in that range.
+
+const sumOfNumbers = (minN, maxN) => {
+  let sum = 0;
+  for(let i = minN; i <= maxN; i++) {
+
+    if (minN == 0 && maxN == 0) {
+      sum = 0;
+    } else {
+      sum = i + sum;
+    }
+    
+  }
+  console.log(sum);
+}
+
+sumOfNumbers(0, 0);
+
+
