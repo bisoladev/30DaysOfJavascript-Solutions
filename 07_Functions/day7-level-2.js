@@ -219,3 +219,21 @@ const sumOfEven = (minN, maxN) => {
 
 sumOfEven(1, 5);
 
+//Exercise 13
+// Declare a function name evensAndOdds . It takes a positive integer as parameter and it counts number of evens and odds in the number.
+
+const evensAndOdds = (pNum) => {
+  let nEven = 0;
+  let nOdd = 0;
+  for(let i = 0; i <= pNum; i++) {
+    if (i % 2 == 0) {
+      nEven++;
+    } else if (i % 2 !== 0) {
+      nOdd++; 
+    }
+  }
+  console.log(`The number of even numbers is ${nEven} and the number of odd numbers is ${nOdd};`)
+}
+
+evensAndOdds(100);
+
