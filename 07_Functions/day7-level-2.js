@@ -209,11 +209,12 @@ const sumOfEven = (minN, maxN) => {
     if (i % 2 == 0) {
       sum = sum + i;
     } else if (i % 2 !== 0) {
-      i = 0;
+      continue;
     }
-    
+    console.log(sum);
+    console.log(i);
   }
-  console.log(sum);
+  
 }
 
 sumOfEven(1, 5);
