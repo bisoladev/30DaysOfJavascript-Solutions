@@ -180,4 +180,41 @@ const sumOfNumbers = (minN, maxN) => {
 
 sumOfNumbers(0, 0);
 
+//Exercise 11
+// Declare a function name _sumOfOdds_. It takes a number parameter and it adds all the odd numbers in that - range.
+
+const sumOfOdds = (minN, maxN) => {
+  let sum = 0;
+  for(let i = minN; i <= maxN; i++) {
+
+    if (i % 2 !== 0) {
+      sum = sum + i;
+    } else if (i % 2 == 0) {
+      continue;
+    }
+    console.log(sum);
+    console.log(i);
+  }
+}
+
+sumOfOdds(1, 7);
+
+//Exercise 12
+// Declare a function name _sumOfEven_. It takes a number parameter and it adds all the odd numbers in that - range.
+
+const sumOfEven = (minN, maxN) => {
+  let sum = 0;
+  for(let i = minN; i <= maxN; i++) {
+
+    if (i % 2 == 0) {
+      sum = sum + i;
+    } else if (i % 2 !== 0) {
+      i = 0;
+    }
+    
+  }
+  console.log(sum);
+}
+
+sumOfEven(1, 5);
 
