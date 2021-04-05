@@ -234,6 +234,18 @@ const evensAndOdds = (pNum) => {
   }
   console.log(`The number of even numbers is ${nEven} and the number of odd numbers is ${nOdd};`)
 }
-
 evensAndOdds(100);
+
+//Exercise 14
+// Write a function which takes any number of arguments and return the sum of the arguments.
+
+const sumAllNums = (...args) => {
+  let sum = 0
+  for (const element of args) {
+    sum += element
+  }
+  return sum
+}
+
+console.log(sumAllNums(1, 2, 3, 4));
 
