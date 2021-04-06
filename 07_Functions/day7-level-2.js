@@ -265,4 +265,16 @@ randomUserIp();
   return "0123456789ABCDEF".charAt(Math.floor(Math.random() * 16))
 });
 
-//
+//Exercise 17
+// Declare a function name _randomHexaNumberGenerator_. When this function is called it generates a random hexadecimal number. The function return the hexadecimal number.
+
+const randomHexaNumberGenerator = () => {
+  let random = Math.random().toString(16).substr(2,6);
+  for(let i = 0; i < 1; i++) {
+      let hexChars = '#';
+      hexChars += random;
+      console.log(hexChars);
+  }
+}
+
+randomHexaNumberGenerator();
