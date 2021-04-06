@@ -259,4 +259,10 @@ console.log(ip)
 
 randomUserIp();
 
+//Exercise 16
+// Write a function which generates a _randomMacAddress_
+"XX:XX:XX:XX:XX:XX".replace(/X/g, function() {
+  return "0123456789ABCDEF".charAt(Math.floor(Math.random() * 16))
+});
 
+//
