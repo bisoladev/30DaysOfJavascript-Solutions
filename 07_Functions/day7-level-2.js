@@ -278,3 +278,18 @@ const randomHexaNumberGenerator = () => {
 }
 
 randomHexaNumberGenerator();
+
+//Exercise 18
+// Declare a function name _userIdGenerator_. When this function is called it generates seven character id. The function return the id.
+
+const userIdGenerator = () => {
+  let randomId = Math.random().toString(32).substr(2,7);
+  randomId = randomId.toUpperCase();
+  for(let i = 0; i < 1; i++) {
+      let hexChars = '#';
+      hexChars += randomId;
+      console.log(hexChars);
+  }
+}
+
+userIdGenerator();
