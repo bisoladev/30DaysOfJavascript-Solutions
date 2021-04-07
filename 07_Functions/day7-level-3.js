@@ -70,3 +70,17 @@ const arrayOfRgbColors = () => {
 }
 
 arrayOfRgbColors();
+
+//Exercise 6
+// Write a function **_convertHexaToRgb_** which converts hexa color to rgb and it returns an rgb color.
+
+function componentToHex(c) {
+  var hex = c.toString(16);
+  return hex.length == 1 ? "0" + hex : hex;
+}
+
+function rgbToHex(r, g, b) {
+  return "#" + componentToHex(r) + componentToHex(g) + componentToHex(b);
+}
+
+console.log(rgbToHex(0, 51, 255));
