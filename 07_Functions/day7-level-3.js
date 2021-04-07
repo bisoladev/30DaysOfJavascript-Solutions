@@ -35,7 +35,7 @@
 
 //Exercise 4
 // Write a function **_arrayOfHexaColors_** which return any number of hexadecimal colors in an array.
-let arrayOfHexaColors = () => {
+const arrayOfHexaColors = () => {
   let allHexCodes = '123456789abcdef';
   let loopCount = parseInt(Math.random() * 50);
   let hexColorArr = [];
@@ -51,3 +51,22 @@ let arrayOfHexaColors = () => {
 } 
 console.log(arrayOfHexaColors());
 
+//Exercise 5
+// Write a function **_arrayOfRgbColors_** which return any number of RGB colors in an array.
+
+const arrayOfRgbColors = () => {
+  let loopCount = parseInt(Math.random() * 10);
+  let colors = [];
+
+  for (i = 0; i < loopCount; i++) {
+    colors[i] = "rgb";
+    colors[i] += `(${ Math.floor(Math.random() * 255) },`;
+    colors[i] += `${ Math.floor(Math.random() * 255) },`
+    colors[i] += `${ Math.floor(Math.random() * 255) })`
+
+  }
+
+  return console.log(colors);
+}
+
+arrayOfRgbColors();
