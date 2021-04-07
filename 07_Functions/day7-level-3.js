@@ -19,17 +19,35 @@
 // } 
 // console.log(userIdGeneratedByUser());
 
-//Exercise 2
+//Exercise 3
 // Write a function name _rgbColorGenerator_ and it generates rgb colors.
 
-const rgbColorGenerator = () => {
-  let r = Math.floor(Math.random() * 255);
-  let g = Math.floor(Math.random() * 255);
-  let b = Math.floor(Math.random() * 255);
+// const rgbColorGenerator = () => {
+//   let r = Math.floor(Math.random() * 255);
+//   let g = Math.floor(Math.random() * 255);
+//   let b = Math.floor(Math.random() * 255);
 
-  let rgb = `rgb(${r}, ${g}, ${b})`;
-  return console.log(rgb);
-}
+//   let rgb = `rgb(${r}, ${g}, ${b})`;
+//   return console.log(rgb);
+// }
 
-rgbColorGenerator();
-       
+// rgbColorGenerator();
+
+//Exercise 4
+// Write a function **_arrayOfHexaColors_** which return any number of hexadecimal colors in an array.
+let arrayOfHexaColors = () => {
+  let allHexCodes = '123456789abcdef';
+  let loopCount = parseInt(Math.random() * 50);
+  let hexColorArr = [];
+  
+  for(let x=1; x<=loopCount; x++) {
+     let hexChars = [];
+     for (let i = 0; i < 6; i++) {
+        hexChars.push(allHexCodes[parseInt(Math.random() * allHexCodes.length) - 1]);
+     }
+     hexColorArr.push('#' + hexChars.join(''));
+  }
+  return hexColorArr;
+} 
+console.log(arrayOfHexaColors());
+
