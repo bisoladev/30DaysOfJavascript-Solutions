@@ -84,3 +84,82 @@ function rgbToHex(r, g, b) {
 }
 
 console.log(rgbToHex(0, 51, 255));
+
+//Alternative solution
+// function RGBToHex(r,g,b) {
+//   r = r.toString(16);
+//   g = g.toString(16);
+//   b = b.toString(16);
+
+//   if (r.length == 1)
+//     r = "0" + r;
+//   if (g.length == 1)
+//     g = "0" + g;
+//   if (b.length == 1)
+//     b = "0" + b;
+
+//   return "#" + r + g + b;
+// }
+
+fullColorHex(160,80,70);
+//Exercise 7
+// Write a function **_convertRgbToHexa_** which converts rgb to hexa color and it returns an hexa color.
+
+
+//1st solution
+function hexToRgb(hex) {
+  var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+  return result ? {
+    r: parseInt(result[1], 16),
+    g: parseInt(result[2], 16),
+    b: parseInt(result[3], 16)
+  } : null;
+}
+
+console.log(hexToRgb("#eef333").g); // "51";
+
+//2nd solution
+function HEX2RGB (hex) {
+  "use strict";
+  if (hex.charAt(0) === '#') {
+      hex = hex.substr(1);
+  }
+  if ((hex.length < 2) || (hex.length > 6)) {
+      return false;
+  }
+  var values = hex.split(''),
+      r,
+      g,
+      b;
+
+  if (hex.length === 2) {
+      r = parseInt(values[0].toString() + values[1].toString(), 16);
+      g = r;
+      b = r;
+  } else if (hex.length === 3) {
+      r = parseInt(values[0].toString() + values[0].toString(), 16);
+      g = parseInt(values[1].toString() + values[1].toString(), 16);
+      b = parseInt(values[2].toString() + values[2].toString(), 16);
+  } else if (hex.length === 6) {
+      r = parseInt(values[0].toString() + values[1].toString(), 16);
+      g = parseInt(values[2].toString() + values[3].toString(), 16);
+      b = parseInt(values[4].toString() + values[5].toString(), 16);
+  } else {
+      return false;
+  }
+  return [r, g, b];
+}
+
+//3rd solution
+const RGB_HEX = /^#?(?:([\da-f]{3})[\da-f]?|([\da-f]{6})(?:[\da-f]{2})?)$/i;
+
+const hex2RGB = str => {
+  const [ , short, long ] = String(str).match(RGB_HEX) || [];
+
+  if (long) {
+    const value = Number.parseInt(long, 16);
+    return [ value >> 16, value >> 8 & 0xFF, value & 0xFF ];
+  } else if (short) {
+    return Array.from(short, s => Number.parseInt(s, 16)).map(n => (n << 4) | n);
+  }
+};
