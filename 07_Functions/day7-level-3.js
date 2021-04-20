@@ -193,4 +193,4 @@ const generateColors = (format,n) => {
     }
 }
 
-generateColors('hexa', 5);
+generateColors('rgb', 3);
