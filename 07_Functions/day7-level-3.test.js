@@ -164,3 +164,33 @@
 //   }
 // };
 
+//Exercise 8
+//Write a function **_generateColors_** which can generate any number of hexa or rgb colors.
+
+const generateColors = (format,n) => {
+    if(format === 'hexa') {
+        let allHexCodes = '123456789abcdef';
+        let hexColorArr = [];
+        
+        for(let x = 1; x <= n; x++) {
+            let hexChars = [];
+            for (let i = 0; i < 6; i++) {
+                hexChars.push(allHexCodes[parseInt(Math.random() * allHexCodes.length) - 1]);
+            }
+            hexColorArr.push('#' + hexChars.join(''));
+        }
+        return console.log(hexColorArr);
+    }   else if (format === 'rgb') {
+            let colors = [];
+            
+            for (i = 0; i < n; i++) {
+                colors[i] = "rgb";
+                colors[i] += `(${ Math.floor(Math.random() * 255) },`;
+                colors[i] += `${ Math.floor(Math.random() * 255) },`
+                colors[i] += `${ Math.floor(Math.random() * 255) })`
+            } 
+            return console.log(colors);
+    }
+}
+
+generateColors('hexa', 5);
