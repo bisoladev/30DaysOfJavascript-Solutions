@@ -194,3 +194,16 @@ const generateColors = (format,n) => {
 }
 
 generateColors('rgb', 3);
+
+//Exercise 9
+// Call your function _shuffleArray_, it takes an array as a parameter and it returns a shuffled array
+
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+}
+
+console.log(shuffleArray(['a','b','c','d','e','f']));
