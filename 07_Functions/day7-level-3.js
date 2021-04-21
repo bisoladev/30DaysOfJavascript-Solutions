@@ -241,68 +241,86 @@
 //Exercise 13
 // Write a function called _sumOfArrayItems_, it takes an array parameter and return the sum of all the items. Check if all the array items are number types. If not give return reasonable feedback.
 
-function sumOfArrayItems(numbers){
-    let arrayOfNonNumbers = numbers.filter(item => typeof(item) != "number");
-    console.log(arrayOfNonNumbers);
-    let sum = 0;
-    for (num of numbers) {
-        if(arrayOfNonNumbers.length == 0) {
-            sum += num;
-            console.log(sum);
-        } else if(arrayOfNonNumbers.length > 0){
-            sum = "Not all elements were numbers";
-        }
-    } 
-    return sum;
-  }
+// function sumOfArrayItems(numbers){
+//     let arrayOfNonNumbers = numbers.filter(item => typeof(item) != "number");
+//     console.log(arrayOfNonNumbers);
+//     let sum = 0;
+//     for (num of numbers) {
+//         if(arrayOfNonNumbers.length == 0) {
+//             sum += num;
+//             console.log(sum);
+//         } else if(arrayOfNonNumbers.length > 0){
+//             sum = "Not all elements were numbers";
+//         }
+//     } 
+//     return sum;
+//   }
 
-  console.log(sumOfArrayItems([1,2,3,4,5,6,7,8]));   
+//   console.log(sumOfArrayItems([1,2,3,4,5,6,7,8]));   
 
-  const sumOfArrayValues = (array) => {
-    let sum = 0;
-    for (const arr of array) {
-        if (typeof arr === "number") {
-            sum += arr
-        } else {
-            sum = `it's a string`
-        }
-    }
-    return sum;
-}
-console.log(sumOfArrayValues([1, 2, 3,'a']));
+//   const sumOfArrayValues = (array) => {
+//     let sum = 0;
+//     for (const arr of array) {
+//         if (typeof arr === "number") {
+//             sum += arr
+//         } else {
+//             sum = `it's a string`
+//         }
+//     }
+//     return sum;
+// }
+// console.log(sumOfArrayValues([1, 2, 3,'a']));
 
 //Exercise 14
 // Write a function called _average_, it takes an array parameter and returns the average of the items. Check if all the array items are number types. If not give return reasonable feedback.
 
-function averageArr(numbers){
-    let arrayOfNonNumbers = numbers.filter(item => typeof(item) != "number");
-    console.log(arrayOfNonNumbers);
-    let sum = 0;
-    let average = 0;
-    for (num of numbers) {
-        if(arrayOfNonNumbers.length == 0) {
-            sum += num;
-            average = Math.round(sum/(numbers.length));
-        } else if(arrayOfNonNumbers.length > 0){
-            average = "Not all elements were numbers";
-        }
-    } 
-    return average;
-  }
+// function averageArr(numbers){
+//     let arrayOfNonNumbers = numbers.filter(item => typeof(item) != "number");
+//     console.log(arrayOfNonNumbers);
+//     let sum = 0;
+//     let average = 0;
+//     for (num of numbers) {
+//         if(arrayOfNonNumbers.length == 0) {
+//             sum += num;
+//             average = Math.round(sum/(numbers.length));
+//         } else if(arrayOfNonNumbers.length > 0){
+//             average = "Not all elements were numbers";
+//         }
+//     } 
+//     return average;
+//   }
 
-  console.log(averageArr([1,2,3,4,5,6,7,8]));   
+//   console.log(averageArr([1,2,3,4,5,6,7,8]));   
 
-//Exercise 15
-//Write a function called _modifyArray_ takes array as parameter and modifies the fifth item of the array and return the array. If the array length is less than five it return 'item not found'.  
+// //Exercise 15
+// //Write a function called _modifyArray_ takes array as parameter and modifies the fifth item of the array and return the array. If the array length is less than five it return 'item not found'.  
 
-const modifyArray = (array) => {
+// const modifyArray = (array) => {
 
-    if (array.length >= 5) {
-        array[4] = 'I am a relaxing Dev';
-        return array;
-    } else if (array.length < 5) {
-        return 'Item not found';
+//     if (array.length >= 5) {
+//         array[4] = 'I am a relaxing Dev';
+//         return array;
+//     } else if (array.length < 5) {
+//         return 'Item not found';
+//     }
+// }
+
+// console.log(modifyArray([1,2,3,4,5]));
+
+//Exercise 16
+// Write a function called _isPrime_, which checks if a number is prime number.
+
+function isPrime(number){
+    for(let n = 2; n < number; n++){
+      if(number%n == 0){
+        return false
+      }
     }
-}
+    return true
+  }
+  
+console.log(isPrime(30));
 
-console.log(modifyArray([1,2,3,4,5]));
+
+  
+   
