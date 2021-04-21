@@ -310,13 +310,28 @@
 //Exercise 16
 // Write a function called _isPrime_, which checks if a number is prime number.
 
-const isPrime = num => {
-  for(let i = 2, s = Math.sqrt(num); i <= s; i++)
-      if(num % i === 0) return false; 
-  return num > 1;
-}
+// const isPrime = num => {
+//   for(let i = 2, s = Math.sqrt(num); i <= s; i++)
+//       if(num % i === 0) return false; 
+//   return num > 1;
+// }
   
-console.log(isPrime(4));
+// console.log(isPrime(4));
+
+//Exercise 17
+// Write a function which checks if all items are unique in the array.
+
+function checkUnique(array) {
+  for(let x = 1; x < array.length; x++) {
+    for(let i = 0; i< x; i++) {
+      if(array[x] == array[i])
+        return false;
+    }
+  } return true;
+}
+
+
+console.log(checkUnique([1,2,2,3,4,5,6]));
 
 
   
