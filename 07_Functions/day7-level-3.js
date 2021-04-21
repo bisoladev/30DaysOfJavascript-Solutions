@@ -321,18 +321,31 @@
 //Exercise 17
 // Write a function which checks if all items are unique in the array.
 
-function checkUnique(array) {
+// function checkUnique(array) {
+//   for(let x = 1; x < array.length; x++) {
+//     for(let i = 0; i< x; i++) {
+//       if(array[x] == array[i])
+//         return false;
+//     }
+//   } return true;
+// }
+
+
+// console.log(checkUnique([1,2,2,3,4,5,6]));
+
+//Exercise 18
+// Write a function which checks if all the items of the array are the same data type.
+
+function sameDataType(array) {
   for(let x = 1; x < array.length; x++) {
     for(let i = 0; i< x; i++) {
-      if(array[x] == array[i])
+      if(typeof (array[x]) !== typeof (array[i]))
         return false;
     }
   } return true;
 }
 
 
-console.log(checkUnique([1,2,2,3,4,5,6]));
-
-
+console.log(sameDataType([1,2,2,3,4,5,6, 'string']));
   
    
