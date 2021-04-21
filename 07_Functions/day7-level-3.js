@@ -216,3 +216,11 @@ function factorial(num) {
  }
  console.log(factorial(4));
 
+ //Exercise 11
+//  Call your function _isEmpty_, it takes a parameter and it checks if it is empty or not
+
+const isEmpty = (p) => {
+    return (p) ? console.log('This parameter is not empty') : console.log('It is empty');
+}
+
+isEmpty(3);
