@@ -167,33 +167,33 @@
 //Exercise 8
 //Write a function **_generateColors_** which can generate any number of hexa or rgb colors.
 
-const generateColors = (format,n) => {
-    if(format === 'hexa') {
-        let allHexCodes = '123456789abcdef';
-        let hexColorArr = [];
+// const generateColors = (format,n) => {
+//     if(format === 'hexa') {
+//         let allHexCodes = '123456789abcdef';
+//         let hexColorArr = [];
         
-        for(let x = 1; x <= n; x++) {
-            let hexChars = [];
-            for (let i = 0; i < 6; i++) {
-                hexChars.push(allHexCodes[parseInt(Math.random() * allHexCodes.length) - 1]);
-            }
-            hexColorArr.push('#' + hexChars.join(''));
-        }
-        return console.log(hexColorArr);
-    }   else if (format === 'rgb') {
-            let colors = [];
+//         for(let x = 1; x <= n; x++) {
+//             let hexChars = [];
+//             for (let i = 0; i < 6; i++) {
+//                 hexChars.push(allHexCodes[parseInt(Math.random() * allHexCodes.length) - 1]);
+//             }
+//             hexColorArr.push('#' + hexChars.join(''));
+//         }
+//         return console.log(hexColorArr);
+//     }   else if (format === 'rgb') {
+//             let colors = [];
             
-            for (i = 0; i < n; i++) {
-                colors[i] = "rgb";
-                colors[i] += `(${ Math.floor(Math.random() * 255) },`;
-                colors[i] += `${ Math.floor(Math.random() * 255) },`
-                colors[i] += `${ Math.floor(Math.random() * 255) })`
-            } 
-            return console.log(colors);
-    }
-}
+//             for (i = 0; i < n; i++) {
+//                 colors[i] = "rgb";
+//                 colors[i] += `(${ Math.floor(Math.random() * 255) },`;
+//                 colors[i] += `${ Math.floor(Math.random() * 255) },`
+//                 colors[i] += `${ Math.floor(Math.random() * 255) })`
+//             } 
+//             return console.log(colors);
+//     }
+// }
 
-generateColors('rgb', 3);
+// generateColors('rgb', 3);
 
 //Exercise 9
 // Call your function _shuffleArray_, it takes an array as a parameter and it returns a shuffled array
@@ -211,16 +211,29 @@ console.log(shuffleArray(['a','b','c','d','e','f']));
 //Exercise 10
 // Call your function _factorial_, it takes a whole number as a parameter and it return a factorial of the number
 
-function factorial(num) {
-    return (num <= 1) ? 1 : num * factorial(num-1);
- }
- console.log(factorial(4));
+// function factorial(num) {
+//     return (num <= 1) ? 1 : num * factorial(num-1);
+//  }
+//  console.log(factorial(4));
 
  //Exercise 11
 //  Call your function _isEmpty_, it takes a parameter and it checks if it is empty or not
 
-const isEmpty = (p) => {
-    return (p) ? console.log('This parameter is not empty') : console.log('It is empty');
-}
+// const isEmpty = (p) => {
+//     return (p) ? console.log('This parameter is not empty') : console.log('It is empty');
+// }
 
-isEmpty(3);
+// isEmpty(3);
+
+//Exercise 12
+// Call your function _sum_, it takes any number of arguments and it returns the sum.
+
+const sum = (...args) => {
+    let sum = 0
+    for (const element of args) {
+      sum += element
+    }
+    return sum
+  }
+  
+  console.log(sum(1, 2, 3, 4, 2));
