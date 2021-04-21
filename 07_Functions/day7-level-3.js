@@ -270,3 +270,24 @@ function sumOfArrayItems(numbers){
     return sum;
 }
 console.log(sumOfArrayValues([1, 2, 3,'a']));
+
+//Exercise 14
+// Write a function called _average_, it takes an array parameter and returns the average of the items. Check if all the array items are number types. If not give return reasonable feedback.
+
+function averageArr(numbers){
+    let arrayOfNonNumbers = numbers.filter(item => typeof(item) != "number");
+    console.log(arrayOfNonNumbers);
+    let sum = 0;
+    let average = 0;
+    for (num of numbers) {
+        if(arrayOfNonNumbers.length == 0) {
+            sum += num;
+            average = Math.round(sum/(numbers.length));
+        } else if(arrayOfNonNumbers.length > 0){
+            average = "Not all elements were numbers";
+        }
+    } 
+    return average;
+  }
+
+  console.log(averageArr([1,2,3,4,5,6,7,8]));   
