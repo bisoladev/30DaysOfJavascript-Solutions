@@ -291,3 +291,18 @@ function averageArr(numbers){
   }
 
   console.log(averageArr([1,2,3,4,5,6,7,8]));   
+
+//Exercise 15
+//Write a function called _modifyArray_ takes array as parameter and modifies the fifth item of the array and return the array. If the array length is less than five it return 'item not found'.  
+
+const modifyArray = (array) => {
+
+    if (array.length >= 5) {
+        array[4] = 'I am a relaxing Dev';
+        return array;
+    } else if (array.length < 5) {
+        return 'Item not found';
+    }
+}
+
+console.log(modifyArray([1,2,3,4,5]));
