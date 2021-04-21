@@ -351,9 +351,36 @@
 //Exercise 19
 // JavaScript variable name does not support special characters or symbols except \$ or \_. Write a function **isValidVariable** which check if a variable is valid or invalid variable.
 
-function isValidVariable(varName){
-  return varName.match(/[^A-Za-z$_]/) == null
+// function isValidVariable(varName){
+//   return varName.match(/[^A-Za-z$_]/) == null
+// }
+
+// console.log(isValidVariable('bisola'));
+
+//Exercise 20
+// Write a function which returns array of seven random numbers in a range of 0-9. All the numbers must be unique.
+
+
+const sevenRandomNumbers = () =>{
+  const randNumbers = []
+  let i = 0
+  while(randNumbers.length <= 6){
+    i = Math.trunc(Math.random() * 9)
+    if(randNumbers.indexOf(i) == -1){
+      randNumbers.push(i)
+    }
+  }
+  
+  return randNumbers
+}
+console.log(sevenRandomNumbers());
+
+//Exercise 21
+// Write a function called reverseCountries, it takes countries array and first it copy the array and returns the reverse of the original array
+
+const reverseCountries = (countries) =>{
+  let copy = countries;
+  return console.log(countries.reverse());
 }
 
-console.log(isValidVariable('bisola'));
-   
+reverseCountries([1,3,4,5,6,7,8]);
