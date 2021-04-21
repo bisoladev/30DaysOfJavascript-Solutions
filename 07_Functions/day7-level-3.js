@@ -207,3 +207,12 @@ function shuffleArray(array) {
 }
 
 console.log(shuffleArray(['a','b','c','d','e','f']));
+
+//Exercise 10
+// Call your function _factorial_, it takes a whole number as a parameter and it return a factorial of the number
+
+function factorial(num) {
+    return (num <= 1) ? 1 : num * factorial(num-1);
+ }
+ console.log(factorial(4));
+
