@@ -310,16 +310,13 @@
 //Exercise 16
 // Write a function called _isPrime_, which checks if a number is prime number.
 
-function isPrime(number){
-    for(let n = 2; n < number; n++){
-      if(number%n == 0){
-        return false
-      }
-    }
-    return true
-  }
+const isPrime = num => {
+  for(let i = 2, s = Math.sqrt(num); i <= s; i++)
+      if(num % i === 0) return false; 
+  return num > 1;
+}
   
-console.log(isPrime(30));
+console.log(isPrime(4));
 
 
   
