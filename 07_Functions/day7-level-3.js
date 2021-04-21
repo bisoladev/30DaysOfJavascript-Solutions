@@ -384,3 +384,5 @@ const reverseCountries = (countries) =>{
 }
 
 reverseCountries([1,3,4,5,6,7,8]);
+
+//Day 7 completed!!
