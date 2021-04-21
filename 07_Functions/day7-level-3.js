@@ -336,16 +336,24 @@
 //Exercise 18
 // Write a function which checks if all the items of the array are the same data type.
 
-function sameDataType(array) {
-  for(let x = 1; x < array.length; x++) {
-    for(let i = 0; i< x; i++) {
-      if(typeof (array[x]) !== typeof (array[i]))
-        return false;
-    }
-  } return true;
+// function sameDataType(array) {
+//   for(let x = 1; x < array.length; x++) {
+//     for(let i = 0; i< x; i++) {
+//       if(typeof (array[x]) !== typeof (array[i]))
+//         return false;
+//     }
+//   } return true;
+// }
+
+
+// console.log(sameDataType([1,2,2,3,4,5,6, 'string']));
+
+//Exercise 19
+// JavaScript variable name does not support special characters or symbols except \$ or \_. Write a function **isValidVariable** which check if a variable is valid or invalid variable.
+
+function isValidVariable(varName){
+  return varName.match(/[^A-Za-z$_]/) == null
 }
 
-
-console.log(sameDataType([1,2,2,3,4,5,6, 'string']));
-  
+console.log(isValidVariable('bisola'));
    
