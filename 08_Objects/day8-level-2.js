@@ -118,7 +118,15 @@ console.log(usersGreater50Points);
     if (entry[1].skills.includes('MongoDB', 'Express', 'React', 'Node')) {
       mernStackDevelopers.push(entry[0]);
     }
-
   }
 
   console.log(mernStackDevelopers);
+
+//Exercise 4
+//Set your name in the users object without modifying the original users object.
+
+const copyUsers = Object.assign({}, users);
+
+copyUsers.myName = 'Bisola';
+
+console.log(Object.entries(copyUsers));
