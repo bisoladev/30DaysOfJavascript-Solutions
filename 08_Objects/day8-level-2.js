@@ -157,5 +157,6 @@ const country = {
     return statement;
   }
 }
-
 console.log(country.countryInfo());
+
+//Level 2 completed!!!
