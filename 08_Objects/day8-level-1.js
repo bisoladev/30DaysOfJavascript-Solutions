@@ -36,9 +36,12 @@ console.log(dogValues);
 dog.breed = 'Maltese dog'
 dog.getDogInfo = function () {
   let bark = this.bark();
-  let myDogInfo = `The name of my dog is ${this.name}, she is ${this.color} in color and has ${this.legs} legs, when she sees me, she barks ${bark}, she is ${this.age} years old`;
+  let myDogInfo = `The name of my dog is ${this.name}, she is ${this.color} in color, she is a ${this.breed} and has ${this.legs} legs, when she sees me, she barks ${bark}, she is ${this.age} years old`;
   return myDogInfo;
 }
 
 console.log(dog);
 console.log(dog.getDogInfo());
+
+//Level 1 completed
+
