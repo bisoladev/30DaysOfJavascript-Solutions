@@ -130,4 +130,32 @@ copyUsers.myName = 'Bisola';
 console.log(Object.entries(copyUsers));
 
 //Exercise 5
+// Get all keys or properties of users object.
+
 console.log(Object.keys(users));
+
+//Exercise 6
+// Get all the values of users object.
+
+console.log(Object.values(users));
+
+//Exercise 7
+// Use the countries object to print a country name, capital, populations and languages.
+
+const country = {
+  name: 'Nigeria',
+  capital: 'Federal Capital City',
+  population: '180 million',
+  languages: ['Yoruba', 'Igbo', 'Hausa'],
+  countryInfo: function() {
+    let languagesWithoutLastLanguage = this.languages.splice(0, this.languages.length - 1)
+    .join(', ');
+    let lastLanguage = this.languages.splice(this.languages.length - 1)[0];
+    let languages = `${languagesWithoutLastLanguage}, and ${lastLanguage}`;
+    let statement = `I live in ${this.name}. ${this.capital} is the capital of ${this.name}. There are over ${this.population} people in ${this.name}. The major languages are ${languages}.`;
+
+    return statement;
+  }
+}
+
+console.log(country.countryInfo());
