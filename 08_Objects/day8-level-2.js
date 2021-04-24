@@ -126,7 +126,8 @@ console.log(usersGreater50Points);
 //Set your name in the users object without modifying the original users object.
 
 const copyUsers = Object.assign({}, users);
-
 copyUsers.myName = 'Bisola';
-
 console.log(Object.entries(copyUsers));
+
+//Exercise 5
+console.log(Object.keys(users));
