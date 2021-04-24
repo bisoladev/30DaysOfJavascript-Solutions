@@ -19,4 +19,10 @@ dog.bark = function() {
   return 'woof woof!';
 }
 
+console.log(dog.bark);
 
+//Exercise 4
+// Get name, legs, color, age and bark value from the dog object
+
+const dogValues = Object.values(dog);
+console.log(dogValues);
