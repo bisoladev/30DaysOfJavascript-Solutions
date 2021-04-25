@@ -55,28 +55,28 @@ const users = {
 //Exercise 1
 //Find the person who has many skills in the users object.
 
-// let maxi = 0;
-// let mostSkilledPerson;
+let maxi = 0;
+let mostSkilledPerson;
 
-// for (const entry of Object.entries(users)) {
-//   if (entry[1].skills.length > maxi) {
-//     maxi = entry[1].skills.length;
-//     mostSkilledPerson = entry[0];
-//   }
-// }
-// console.log(mostSkilledPerson);
+for (const entry of Object.entries(users)) {
+  if (entry[1].skills.length > maxi) {
+    maxi = entry[1].skills.length;
+    mostSkilledPerson = entry[0];
+  }
+}
+console.log(mostSkilledPerson);
 
-// //Alternative solution
-// let max = 0;
-// let skilledPerson;
+//Alternative solution
+let max = 0;
+let skilledPerson;
 
-// for(const user of Object.keys(users)) {
-//    if(users[user].skills.length > max) {
-//       max = users[user].skills.length;
-//       skilledPerson = Object.assign({}, users[user]);
-//    }
-// }
-// console.log(skilledPerson.email, max); 
+for(const user of Object.keys(users)) {
+   if(users[user].skills.length > max) {
+      max = users[user].skills.length;
+      skilledPerson = Object.assign({}, users[user]);
+   }
+}
+console.log(skilledPerson.email, max); 
 
 // //Alternative solution
 // let winner;

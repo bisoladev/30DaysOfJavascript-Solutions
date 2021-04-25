@@ -106,34 +106,59 @@ const users = [
 //Exercise 2
 // a. Create a function called signUp which allows user to add to the collection. If user exists, inform the user that he has already an account.  
 // b. Create a function called signIn which allows user to sign in to the application  .
- 
-const signUp = (username, email, password) => {
-  users.forEach(user => {
-    let date = new Date()
-          let chars = "abcdefghiklmnopqrstuvwxyz";
-          let id = [];
-          for (let i = 0; i < 6; i++) {
-              id.push(chars[Math.floor(Math.random() * chars.length)])
-          }
-          id = id.join("");
-      if (user.username === username && user.email === email) {
-          return console.log("you already have an account");
-          
-      } else if (user.username !== username && user.email !== email){
-           return users.push({
-              _id: id,
-              username: username,
-              email: email,
-              password: password,
-              createdAt: `${date.getDate()}/${date.getMonth()}/${date.getFullYear()} ${date.getHours()}:${date.getMinutes()}`,
-              isLoggedIn: "false"
-          })
-      }
-  })
-}
-users.forEach((x) => console.log(x));
 
-signUp('Asab','asab@asab.com', '123456');
+const validate = (text) => {
+  //console.log(text);
+  if (text == null || text == ''){
+    return false;
+  }
+  return true;
+}
+const idGenerator = () => {
+  let chars = "abcdefghiklmnopqrstuvwxyz";
+    let id = [];
+
+    for (let i = 0; i < 6; i++) {
+      id.push(chars[Math.floor(Math.random() * chars.length)])
+    }
+    id = id.join("");
+}
+ 
+const signUp = (userEmail, userName, password) => {
+
+  // Check inputs before doing anything
+  let check = (validate(userEmail) && validate(userName) && validate(password));
+
+  if(check){
+    // check that they don't have an existing account
+    for(let i = 0; i <= users.length - 1; i++){
+      if (users[i].username == userName && users[i].email == userEmail) {
+        return console.log("You already have an account!");
+      }      
+    }
+
+    //Add the user
+    //users
+    users.push({
+      _id: idGenerator(),
+      username: userName,
+      email: userEmail,
+      password: password,
+      createdAt: new Date(),
+      isLoggedIn: false
+    })
+  }
+  // input validation failed if we get here
+  return console.log("Your input has issues!")
+}
+
+// use all of them
+const usrEmail = prompt("Enter your email",);
+const usrName = prompt("Enter your username",);
+const pwd = prompt("Enter password",);
+
+signUp(usrEmail, usrName, pwd);
+console.table(users);
 
 //sign in
 let signIn = (mail, pswd) => {
@@ -148,6 +173,67 @@ let signIn = (mail, pswd) => {
 console.log(signIn('alss@alex.com', '123123'));
 
 
+//Exercise 3
+// The products array has three elements and each of them has six properties.
+// a. Create a function called rateProduct which rates the product.
+// b. Create a function called averageRating which calculate the average rating of a product. 
 
+const products = [
+  {
+    _id: 'eedfcf',
+    name: 'mobile phone',
+    description: 'Huawei Honor',
+    price: 200,
+    ratings: [
+      { userId: 'fg12cy', rate: 5 },
+      { userId: 'zwf8md', rate: 4.5 }
+    ],
+    likes: []
+  },
+  {
+    _id: 'aegfal',
+    name: 'Laptop',
+    description: 'MacPro: System Darwin',
+    price: 2500,
+    ratings: [],
+    likes: ['fg12cy']
+  },
+  {
+    _id: 'hedfcg',
+    name: 'TV',
+    description: 'Smart TV:Procaster',
+    price: 400,
+    ratings: [{ userId: 'fg12cy', rate: 5 }],
+    likes: ['fg12cy']
+  }
+]
 
+// const rateProduct = (productname,rate) => {
+  
+
+//   for (const item of products) {
+//     let chars = "abcdefghiklmnopqrstuvwxyz";
+//     let id = [];
+
+//     for (let i = 0; i < 6; i++) {
+//       id.push(chars[Math.floor(Math.random() * chars.length)])
+//     }
+//     id = id.join("");
+
+//     if (selectProduct.toLowerCase() == item.name.toLowerCase()) {
+//       return item.ratings.push({
+//         userId: id,
+//         rate: rate
+//       });
+//     } else {
+//       return `Select a product available`;
+//     }
+//   }
+//   console.log(products);
+// }
+
+// console.log(products);
+
+// rateProduct();
+// products.forEach((x) => console.log(x));
 
