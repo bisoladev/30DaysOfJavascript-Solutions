@@ -60,48 +60,48 @@
 
 const users = [
   {
-      _id: 'ab12ex',
-      username: 'Alex',
-      email: 'alex@alex.com',
-      password: '123123',
-      createdAt:'08/01/2020 9:00 AM',
-      isLoggedIn: false
+    _id: 'ab12ex',
+    username: 'Alex',
+    email: 'alex@alex.com',
+    password: '123123',
+    createdAt: '08/01/2020 9:00 AM',
+    isLoggedIn: false
   },
   {
-      _id: 'fg12cy',
-      username: 'Asab',
-      email: 'asab@asab.com',
-      password: '123456',
-      createdAt:'08/01/2020 9:30 AM',
-      isLoggedIn: true
+    _id: 'fg12cy',
+    username: 'Asab',
+    email: 'asab@asab.com',
+    password: '123456',
+    createdAt: '08/01/2020 9:30 AM',
+    isLoggedIn: true
   },
   {
-      _id: 'zwf8md',
-      username: 'Brook',
-      email: 'brook@brook.com',
-      password: '123111',
-      createdAt:'08/01/2020 9:45 AM',
-      isLoggedIn: true
+    _id: 'zwf8md',
+    username: 'Brook',
+    email: 'brook@brook.com',
+    password: '123111',
+    createdAt: '08/01/2020 9:45 AM',
+    isLoggedIn: true
   },
   {
-      _id: 'eefamr',
-      username: 'Martha',
-      email: 'martha@martha.com',
-      password: '123222',
-      createdAt:'08/01/2020 9:50 AM',
-      isLoggedIn: false
+    _id: 'eefamr',
+    username: 'Martha',
+    email: 'martha@martha.com',
+    password: '123222',
+    createdAt: '08/01/2020 9:50 AM',
+    isLoggedIn: false
   },
   {
-      _id: 'ghderc',
-      username: 'Thomas',
-      email: 'thomas@thomas.com',
-      password: '123333',
-      createdAt:'08/01/2020 10:00 AM',
-      isLoggedIn: false
+    _id: 'ghderc',
+    username: 'Thomas',
+    email: 'thomas@thomas.com',
+    password: '123333',
+    createdAt: '08/01/2020 10:00 AM',
+    isLoggedIn: false
   }
-  ];
+];
 
-  
+
 
 //Exercise 2
 // a. Create a function called signUp which allows user to add to the collection. If user exists, inform the user that he has already an account.  
@@ -109,69 +109,73 @@ const users = [
 
 const validate = (text) => {
   //console.log(text);
-  if (text == null || text == ''){
+  if (text == null || text == '') {
     return false;
   }
   return true;
 }
 const idGenerator = () => {
   let chars = "abcdefghiklmnopqrstuvwxyz";
-    let id = [];
+  let id = [];
 
-    for (let i = 0; i < 6; i++) {
-      id.push(chars[Math.floor(Math.random() * chars.length)])
-    }
-    id = id.join("");
-}
- 
-const signUp = (userEmail, userName, password) => {
-
-  // Check inputs before doing anything
-  let check = (validate(userEmail) && validate(userName) && validate(password));
-
-  if(check){
-    // check that they don't have an existing account
-    for(let i = 0; i <= users.length - 1; i++){
-      if (users[i].username == userName && users[i].email == userEmail) {
-        return console.log("You already have an account!");
-      }      
-    }
-
-    //Add the user
-    //users
-    users.push({
-      _id: idGenerator(),
-      username: userName,
-      email: userEmail,
-      password: password,
-      createdAt: new Date(),
-      isLoggedIn: false
-    })
+  for (let i = 0; i < 6; i++) {
+    id.push(chars[Math.floor(Math.random() * chars.length)])
   }
-  // input validation failed if we get here
-  return console.log("Your input has issues!")
+  return id = id.join("");
 }
+console.log(idGenerator());
+//console.log(id);
 
-// use all of them
-const usrEmail = prompt("Enter your email",);
-const usrName = prompt("Enter your username",);
-const pwd = prompt("Enter password",);
+// const signUp = (userEmail, userName, password) => {
 
-signUp(usrEmail, usrName, pwd);
-console.table(users);
+//   // Check inputs before doing anything
+//   let check = (validate(userEmail) && validate(userName) && validate(password));
+//   console.log("The value is: " +  check)
+//   if(check){
+//     // check that they don't have an existing account
+//     for(let i = 0; i <= users.length - 1; i++){
+//       if (users[i].username == userName && users[i].email == userEmail) {
+//         return console.log("You already have an account!");
+//       }      
+//     }
 
-//sign in
-let signIn = (mail, pswd) => {
-  for(const user of users) {
-     if(user.email == mail && user.password == pswd) {
-        user.isLoggedIn = true;
-        return 'You have been signed in!!';
-     }  
-  }
-  return 'Incorrect Email or password';
-}
-console.log(signIn('alss@alex.com', '123123'));
+//     //Add the user
+//     //users
+//     users.push({
+//       _id: idGenerator(),
+//       username: userName,
+//       email: userEmail,
+//       password: password,
+//       createdAt: new Date(),
+//       isLoggedIn: false
+//     })
+//     return
+//   }
+//   // input validation failed if we get here
+//   return console.log("Your input has issues!")
+// }
 
+
+// // use all of them
+// const usrEmail = prompt("Enter your email",);
+// const usrName = prompt("Enter your username",);
+// const pwd = prompt("Enter password",);
+
+// signUp(usrEmail, usrName, pwd);
+// console.table(users);
+
+// //sign in
+// let signIn = (mail, pswd) => {
+//   for(const user of users) {
+//      if(user.email == mail && user.password == pswd) {
+//         user.isLoggedIn = true;
+//         return 'You have been signed in!!';
+//      }  
+//   }
+//   return 'Incorrect Email or password';
+// }
+// console.log(signIn('alex@alex.com', '123123'));
+// console.table(users);
 
 //Exercise 3
 // The products array has three elements and each of them has six properties.
@@ -208,32 +212,60 @@ const products = [
   }
 ]
 
-// const rateProduct = (productname,rate) => {
-  
 
-//   for (const item of products) {
-//     let chars = "abcdefghiklmnopqrstuvwxyz";
-//     let id = [];
+// const rateProduct = (productName, rating) => {
 
-//     for (let i = 0; i < 6; i++) {
-//       id.push(chars[Math.floor(Math.random() * chars.length)])
+//   let check = (validate(productName) && validate(rating));
+//   if(check){
+//     for (let i = 0; i<= products.length - 1; i++) {
+//       if (productName == products[i].name) {
+//         //console.log(products[i])
+//         products[i].ratings.push({
+//           userId: idGenerator(),
+//           rate: rating
+//         })
+//         //console.log(products[i])
+//         return console.log(`Successfully added, a new rating of ${rating} to ${productName}`)
+//       }
 //     }
-//     id = id.join("");
-
-//     if (selectProduct.toLowerCase() == item.name.toLowerCase()) {
-//       return item.ratings.push({
-//         userId: id,
-//         rate: rate
-//       });
-//     } else {
-//       return `Select a product available`;
-//     }
+//     return console.log("Product was not found!")
 //   }
-//   console.log(products);
+//   return console.log("Invalid productname or rating")
 // }
-
+// // products.forEach((item) => console.log(item));
 // console.log(products);
 
-// rateProduct();
-// products.forEach((x) => console.log(x));
+// // const selectProduct = prompt('Enter product name',);
+// // const userRating = prompt('Give product rating',);
+// // const ratings = parseInt(userRating);
+// rateProduct(selectProduct, ratings);
+
+const averageRating = (productname) => {
+  // validate the input
+  if (validate(productname)) {
+
+    for (let i = 0; i <= products.length - 1; i++) {
+
+      if (productname == products[i].name) {
+        //sum the product
+        let sumofRating = 0;
+        for (let j = 0; j <= products[i].ratings.length - 1; j++) {
+          sumofRating += (products[i].ratings[j].rate)
+        }
+        // calculate the average
+        let avg = sumofRating / products[i].ratings.length;
+        return console.log(`The average rating of ${productname} is " ${avg}`)
+      }
+
+    }
+    return console.log("Product Not Found")
+  }
+  return console.log("Invalid Input")
+}
+
+averageRating("mobile phone");
+
+//Exercise 4
+// Create a function called likeProduct. This function will help to like the product if it is not liked and remove like if it was liked.
+
 
