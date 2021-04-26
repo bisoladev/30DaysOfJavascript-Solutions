@@ -123,7 +123,7 @@ const idGenerator = () => {
   }
   return id = id.join("");
 }
-console.log(idGenerator());
+// console.log(idGenerator());
 //console.log(id);
 
 // const signUp = (userEmail, userName, password) => {
@@ -240,32 +240,54 @@ const products = [
 // // const ratings = parseInt(userRating);
 // rateProduct(selectProduct, ratings);
 
-const averageRating = (productname) => {
-  // validate the input
-  if (validate(productname)) {
+// const averageRating = (productname) => {
+//   // validate the input
+//   if (validate(productname)) {
 
-    for (let i = 0; i <= products.length - 1; i++) {
+//     for (let i = 0; i <= products.length - 1; i++) {
 
-      if (productname == products[i].name) {
-        //sum the product
-        let sumofRating = 0;
-        for (let j = 0; j <= products[i].ratings.length - 1; j++) {
-          sumofRating += (products[i].ratings[j].rate)
-        }
-        // calculate the average
-        let avg = sumofRating / products[i].ratings.length;
-        return console.log(`The average rating of ${productname} is " ${avg}`)
-      }
+//       if (productname == products[i].name) {
+//         //sum the product
+//         let sumofRating = 0;
+//         for (let j = 0; j <= products[i].ratings.length - 1; j++) {
+//           sumofRating += (products[i].ratings[j].rate)
+//         }
+//         // calculate the average
+//         let avg = sumofRating / products[i].ratings.length;
+//         return console.log(`The average rating of ${productname} is " ${avg}`)
+//       }
 
-    }
-    return console.log("Product Not Found")
-  }
-  return console.log("Invalid Input")
-}
+//     }
+//     return console.log("Product Not Found")
+//   }
+//   return console.log("Invalid Input")
+// }
 
-averageRating("mobile phone");
+// averageRating("mobile phone");
 
 //Exercise 4
 // Create a function called likeProduct. This function will help to like the product if it is not liked and remove like if it was liked.
+
+const likeProduct = (productName) => {
+  //Validate the input
+  if(validate(productName)) {
+    for (let i = 0; i <= products.length - 1; i++) {
+      if (productName == products[i].name) {
+          if (products[i].likes.length == 0) {
+            //Add userId to likes array
+            return products[i].likes.push(idGenerator());
+          } else if (products[i].likes.length > 0) {
+            return console.log('Product has been liked already!');
+          }
+        }
+    }
+    return console.log('Product not found');
+  }
+  return console.log('Invalid input');
+}
+
+likeProduct('TV');
+
+console.table(products);
 
 
