@@ -144,3 +144,27 @@ console.log(getStringLists(array));
 const sum = numbers.reduce((acc, cur) => acc + cur, 0);
 
 console.log(sum);
+
+//Exercise 18
+// Use **_reduce_** to concatenate all the countries and to produce this sentence: **_Estonia, Finland, Sweden, Denmark, Norway, and IceLand are north European countries_**
+
+//Exercise 19
+// Explain the difference between **_some_** and **_every_**
+
+/** some -> returns true if at least one of the element of an iterable satisfies the condition imposed by the callback, false if none do.     
+   
+   every -> returns treu if all the valeus of iterable satisfy the condition imposed by callback, returns false if none at least no does not satisfy it.
+**/ 
+
+//Exercise 20
+// Use **_some_** to check if some names' length greater than seven in names array
+
+const checkSomeLength = names.some((element) => {
+  return element.length > 7;
+})
+
+console.log(checkSomeLength);
+
+
+
+
