@@ -165,6 +165,12 @@ const checkSomeLength = names.some((element) => {
 
 console.log(checkSomeLength);
 
+//Exercise 21
+// Use **_every_** to check if all the countries contain the word land
+
+const checkCountryLand = countries.every((element) => element.toLowerCase().includes('land'));
+console.log(checkCountryLand);
+
 
 
 
