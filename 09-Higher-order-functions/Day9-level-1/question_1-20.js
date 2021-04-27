@@ -114,3 +114,12 @@ console.log(countriesWithSixCharsOrMore);
 const countriesStartWithE = countries.filter((country) => country.indexOf('E') == 0);
 
 console.log(countriesStartWithE);
+
+//Exercise 15
+// Use **_filter_** to filter out only prices with values.
+
+const productsWithPrices = products.filter((element) => {
+  return element.price >= 1;
+})
+
+console.log(productsWithPrices);
