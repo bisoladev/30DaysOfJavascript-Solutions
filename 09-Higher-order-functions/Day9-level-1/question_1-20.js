@@ -90,3 +90,20 @@ console.log(productToPrice);
 const countriesWithLand = countries.filter((country) => country.toLowerCase().includes('land'));
 console.log(countriesWithLand);
 
+//Exercise 12
+// Use **_filter_** to filter out countries having six character.
+
+const countriesWithSixChars = countries.filter((country) =>
+  country.length === 6
+);
+
+console.log(countriesWithSixChars);
+
+//Exercise 13
+// Use **_filter_** to filter out countries containing six letters and more in the country array.
+
+const countriesWithSixCharsOrMore = countries.filter((country) =>
+  country.length >= 6
+);
+
+console.log(countriesWithSixCharsOrMore);
