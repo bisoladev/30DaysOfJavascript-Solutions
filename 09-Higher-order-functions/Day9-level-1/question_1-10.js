@@ -50,3 +50,8 @@ console.log(countriesLenArr);
 const sqrNumArr = numbers.map((element) => element * element);
 console.log(sqrNumArr);
 
+//Exercise 9
+// Use **_map_** to change to each name to uppercase in the names array
+
+const newNamesArr = names.map((element) => element.toUpperCase());
+console.log(newNamesArr);
