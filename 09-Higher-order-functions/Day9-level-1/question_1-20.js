@@ -107,3 +107,10 @@ const countriesWithSixCharsOrMore = countries.filter((country) =>
 );
 
 console.log(countriesWithSixCharsOrMore);
+
+//Exercise 14
+// Use **_filter_** to filter out country start with 'E';
+
+const countriesStartWithE = countries.filter((country) => country.indexOf('E') == 0);
+
+console.log(countriesStartWithE);
