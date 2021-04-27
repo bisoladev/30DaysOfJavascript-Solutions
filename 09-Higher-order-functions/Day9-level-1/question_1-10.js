@@ -45,5 +45,8 @@ const countriesLenArr = countries.map((element) => element.length);
 console.log(countriesLenArr);
 
 //Exercise 8
+// Use **_map_** to create a new array by changing each number to square in the numbers array
 
+const sqrNumArr = numbers.map((element) => element * element);
+console.log(sqrNumArr);
 
