@@ -123,3 +123,14 @@ const productsWithPrices = products.filter((element) => {
 })
 
 console.log(productsWithPrices);
+
+//Exercise 16
+// Declare a function called getStringLists which takes an array as a parameter and then returns an array only with string items.
+
+array = ['b','c','e',1];
+
+const getStringLists = array.filter((item) => {
+    return typeof item == 'string';
+})
+
+console.log(getStringLists);
