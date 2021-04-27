@@ -38,4 +38,12 @@ numbers.forEach((element) => console.log(element));
 const newCountriesArr = countries.map((element) => element.toUpperCase());
 console.log(newCountriesArr);
 
+//Exercise 7
+// Use **_map_** to create an array of countries length from countries array.
+
+const countriesLenArr = countries.map((element) => element.length);
+console.log(countriesLenArr);
+
+//Exercise 8
+
 
