@@ -171,6 +171,12 @@ console.log(checkSomeLength);
 const checkCountryLand = countries.every((element) => element.toLowerCase().includes('land'));
 console.log(checkCountryLand);
 
+//Exercise 22
+// Explain the difference between **_find_** and **_findIndex_**.
+
+// Find returns the first element which satisfies the condition
+// findIndex returns the position of the first element which satisfies the condition
+
 
 
 
