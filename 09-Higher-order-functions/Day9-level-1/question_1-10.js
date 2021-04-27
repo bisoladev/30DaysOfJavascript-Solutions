@@ -32,4 +32,10 @@ names.forEach((element) => console.log(element));
 
 numbers.forEach((element) => console.log(element));
 
+//Exercise 6
+// Use **_map_** to create a new array by changing each country to uppercase in the countries array.
+
+const newCountriesArr = countries.map((element) => element.toUpperCase());
+console.log(newCountriesArr);
+
 
