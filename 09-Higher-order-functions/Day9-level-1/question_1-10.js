@@ -30,6 +30,6 @@ names.forEach((element) => console.log(element));
 //Exercise 5
 // Use **_forEach_** to console.log each number in the numbers array.
 
-numbers.forEach((element) => console.log(element))
+numbers.forEach((element) => console.log(element));
 
 
