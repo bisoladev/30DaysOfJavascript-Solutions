@@ -177,6 +177,18 @@ console.log(checkCountryLand);
 // Find returns the first element which satisfies the condition
 // findIndex returns the position of the first element which satisfies the condition
 
+//Exercise 23
+//Use **_find_** to find the first country containing only six letters in the countries array
+
+const findCountrySixChars = countries.find((element) => element.length === 6);
+console.log(findCountrySixChars);
+
+//Exercise 24
+// Use **_findIndex_** to find the position of the first country containing only six letters in the countries array
+
+const findCountryIndex = countries.findIndex((element) => element.length === 6);
+console.log(findCountryIndex);
+
 
 
 
