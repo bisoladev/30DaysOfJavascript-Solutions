@@ -55,3 +55,10 @@ console.log(sqrNumArr);
 
 const newNamesArr = names.map((element) => element.toUpperCase());
 console.log(newNamesArr);
+
+//Exercise 10
+// Use **_map_** to map the products array to its corresponding prices.
+
+const productToPrice = products.map((element) => `${element.product} => ${element.price}`);
+console.log(productToPrice);
+
