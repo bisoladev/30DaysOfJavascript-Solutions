@@ -129,8 +129,18 @@ console.log(productsWithPrices);
 
 array = ['b','c','e',1];
 
-const getStringLists = array.filter((item) => {
+const getStringLists = (arr) => {
+  let onlyStr = arr.filter((item) => {
     return typeof item == 'string';
-})
+  })
+  return onlyStr;
+}
 
-console.log(getStringLists);
+console.log(getStringLists(array));
+
+//Exercise 17
+// Use **_reduce_** to sum all the numbers in the numbers array.
+
+const sum = numbers.reduce((acc, cur) => acc + cur, 0);
+
+console.log(sum);
