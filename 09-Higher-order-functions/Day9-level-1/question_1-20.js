@@ -195,6 +195,12 @@ console.log(findCountryIndex);
 const norwayIndex = countries.findIndex((element) => element == 'Norway');
 console.log(norwayIndex);
 
+//Exercise 26
+// Use **_findIndex_** to find the position of **_Russia_** if it doesn't exist in the array you will get -1.
+
+const russiaIndex = countries.findIndex((element) => element == 'Russia');
+console.log(russiaIndex);
+
 
 
 
