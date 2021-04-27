@@ -13,6 +13,28 @@ const products = [
 
 //Exercise 1
 // Explain the difference between **_forEach, map, filter, and reduce_**.
+/*
+forEach
+the forEach method takes in an array
+ and execute a function for each element in
+ the array 
+*/
+
+/*map
+the map method produces a new array
+ from the provided callback function
+ to be executed on each array
+*/
+
+/*filter
+this also creates a new array that 
+passes the test of the callback function provided
+*/
+
+/*reduce
+this produces a single value from an array
+provided it meets the callback function
+*/
 
 //Exercise 2
 // Define a call function before you use them in forEach, map, filter or reduce.
@@ -61,4 +83,10 @@ console.log(newNamesArr);
 
 const productToPrice = products.map((element) => `${element.product} => ${element.price}`);
 console.log(productToPrice);
+
+//Exercise 11
+// Use **_filter_** to filter out countries containing **_land_**.
+
+const countriesWithLand = countries.filter((country) => country.toLowerCase().includes('land'));
+console.log(countriesWithLand);
 
