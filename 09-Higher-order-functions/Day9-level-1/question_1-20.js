@@ -189,6 +189,12 @@ console.log(findCountrySixChars);
 const findCountryIndex = countries.findIndex((element) => element.length === 6);
 console.log(findCountryIndex);
 
+//Exercise 25
+// Use **_findIndex_** to find the position of **_Norway_** if it doesn't exist in the array you will get -1.
+
+const norwayIndex = countries.findIndex((element) => element == 'Norway');
+console.log(norwayIndex);
+
 
 
 
