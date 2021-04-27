@@ -201,6 +201,8 @@ console.log(norwayIndex);
 const russiaIndex = countries.findIndex((element) => element == 'Russia');
 console.log(russiaIndex);
 
+/*Level 1 completed*/
+
 
 
 
