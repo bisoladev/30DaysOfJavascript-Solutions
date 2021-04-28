@@ -75,8 +75,14 @@ console.table(getLastTenCountries());
 //Exercise 7
 // Find out which _letter_ is used many _times_ as initial for a country name from the countries array (eg. Finland, Fiji, France etc)
 
-maxInitialLetter = () =>  {return countries.map((e) => {
-  e.length
-})}
+//Method 1
+const maxInitialLetter = countries.reduce((accumulator, current) => {
+  accumulator[current[0]] = accumulator[current[0]] + 1 || 1;
+  return accumulator;
+}, {});
 
-console.log(maxInitialLetter());
+console.log(groupByAge);
+
+
+
+
