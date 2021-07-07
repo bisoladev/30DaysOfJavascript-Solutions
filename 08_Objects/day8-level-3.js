@@ -58,48 +58,48 @@
 // console.log(personAccount.accountInfo());
 
 
-const users = [
-  {
-    _id: 'ab12ex',
-    username: 'Alex',
-    email: 'alex@alex.com',
-    password: '123123',
-    createdAt: '08/01/2020 9:00 AM',
-    isLoggedIn: false
-  },
-  {
-    _id: 'fg12cy',
-    username: 'Asab',
-    email: 'asab@asab.com',
-    password: '123456',
-    createdAt: '08/01/2020 9:30 AM',
-    isLoggedIn: true
-  },
-  {
-    _id: 'zwf8md',
-    username: 'Brook',
-    email: 'brook@brook.com',
-    password: '123111',
-    createdAt: '08/01/2020 9:45 AM',
-    isLoggedIn: true
-  },
-  {
-    _id: 'eefamr',
-    username: 'Martha',
-    email: 'martha@martha.com',
-    password: '123222',
-    createdAt: '08/01/2020 9:50 AM',
-    isLoggedIn: false
-  },
-  {
-    _id: 'ghderc',
-    username: 'Thomas',
-    email: 'thomas@thomas.com',
-    password: '123333',
-    createdAt: '08/01/2020 10:00 AM',
-    isLoggedIn: false
-  }
-];
+// const users = [
+//   {
+//     _id: 'ab12ex',
+//     username: 'Alex',
+//     email: 'alex@alex.com',
+//     password: '123123',
+//     createdAt: '08/01/2020 9:00 AM',
+//     isLoggedIn: false
+//   },
+//   {
+//     _id: 'fg12cy',
+//     username: 'Asab',
+//     email: 'asab@asab.com',
+//     password: '123456',
+//     createdAt: '08/01/2020 9:30 AM',
+//     isLoggedIn: true
+//   },
+//   {
+//     _id: 'zwf8md',
+//     username: 'Brook',
+//     email: 'brook@brook.com',
+//     password: '123111',
+//     createdAt: '08/01/2020 9:45 AM',
+//     isLoggedIn: true
+//   },
+//   {
+//     _id: 'eefamr',
+//     username: 'Martha',
+//     email: 'martha@martha.com',
+//     password: '123222',
+//     createdAt: '08/01/2020 9:50 AM',
+//     isLoggedIn: false
+//   },
+//   {
+//     _id: 'ghderc',
+//     username: 'Thomas',
+//     email: 'thomas@thomas.com',
+//     password: '123333',
+//     createdAt: '08/01/2020 10:00 AM',
+//     isLoggedIn: false
+//   }
+// ];
 
 
 
@@ -107,22 +107,22 @@ const users = [
 // a. Create a function called signUp which allows user to add to the collection. If user exists, inform the user that he has already an account.  
 // b. Create a function called signIn which allows user to sign in to the application  .
 
-const validate = (text) => {
-  //console.log(text);
-  if (text == null || text == '') {
-    return false;
-  }
-  return true;
-}
-const idGenerator = () => {
-  let chars = "abcdefghiklmnopqrstuvwxyz";
-  let id = [];
+// const validate = (text) => {
+//   //console.log(text);
+//   if (text == null || text == '') {
+//     return false;
+//   }
+//   return true;
+// }
+// const idGenerator = () => {
+//   let chars = "abcdefghiklmnopqrstuvwxyz";
+//   let id = [];
 
-  for (let i = 0; i < 6; i++) {
-    id.push(chars[Math.floor(Math.random() * chars.length)])
-  }
-  return id = id.join("");
-}
+//   for (let i = 0; i < 6; i++) {
+//     id.push(chars[Math.floor(Math.random() * chars.length)])
+//   }
+//   return id = id.join("");
+// }
 // console.log(idGenerator());
 //console.log(id);
 
@@ -182,35 +182,35 @@ const idGenerator = () => {
 // a. Create a function called rateProduct which rates the product.
 // b. Create a function called averageRating which calculate the average rating of a product. 
 
-const products = [
-  {
-    _id: 'eedfcf',
-    name: 'mobile phone',
-    description: 'Huawei Honor',
-    price: 200,
-    ratings: [
-      { userId: 'fg12cy', rate: 5 },
-      { userId: 'zwf8md', rate: 4.5 }
-    ],
-    likes: []
-  },
-  {
-    _id: 'aegfal',
-    name: 'Laptop',
-    description: 'MacPro: System Darwin',
-    price: 2500,
-    ratings: [],
-    likes: ['fg12cy']
-  },
-  {
-    _id: 'hedfcg',
-    name: 'TV',
-    description: 'Smart TV:Procaster',
-    price: 400,
-    ratings: [{ userId: 'fg12cy', rate: 5 }],
-    likes: ['fg12cy']
-  }
-]
+// const products = [
+//   {
+//     _id: 'eedfcf',
+//     name: 'mobile phone',
+//     description: 'Huawei Honor',
+//     price: 200,
+//     ratings: [
+//       { userId: 'fg12cy', rate: 5 },
+//       { userId: 'zwf8md', rate: 4.5 }
+//     ],
+//     likes: []
+//   },
+//   {
+//     _id: 'aegfal',
+//     name: 'Laptop',
+//     description: 'MacPro: System Darwin',
+//     price: 2500,
+//     ratings: [],
+//     likes: ['fg12cy']
+//   },
+//   {
+//     _id: 'hedfcg',
+//     name: 'TV',
+//     description: 'Smart TV:Procaster',
+//     price: 400,
+//     ratings: [{ userId: 'fg12cy', rate: 5 }],
+//     likes: ['fg12cy']
+//   }
+// ]
 
 
 // const rateProduct = (productName, rating) => {
@@ -268,26 +268,82 @@ const products = [
 //Exercise 4
 // Create a function called likeProduct. This function will help to like the product if it is not liked and remove like if it was liked.
 
-const likeProduct = (productName) => {
-  //Validate the input
-  if(validate(productName)) {
-    for (let i = 0; i <= products.length - 1; i++) {
-      if (productName == products[i].name) {
-          if (products[i].likes.length == 0) {
-            //Add userId to likes array
-            return products[i].likes.push(idGenerator());
-          } else if (products[i].likes.length > 0) {
-            return console.log('Product has been liked already!');
-          }
-        }
-    }
-    return console.log('Product not found');
-  }
-  return console.log('Invalid input');
+// const likeProduct = (productName) => {
+//   //Validate the input
+//   if(validate(productName)) {
+//     for (let i = 0; i <= products.length - 1; i++) {
+//       if (productName == products[i].name) {
+//           if (products[i].likes.length == 0) {
+//             //Add userId to likes array
+//             return products[i].likes.push(idGenerator());
+//           } else if (products[i].likes.length > 0) {
+//             return console.log('Product has been liked already!');
+//           }
+//         }
+//     }
+//     return console.log('Product not found');
+//   }
+//   return console.log('Invalid input');
+// }
+
+// likeProduct('TV');
+
+// console.table(products);
+
+
+const names = ['Asabeneh', 'Brook', 'David', 'John']
+const countries = [
+  ['Finland', 'Helsinki'],
+  ['Sweden', 'Stockholm'],
+  ['Norway', 'Oslo']
+]
+const user = {
+  name: 'Asabeneh',
+  title: 'Programmer',
+  country: 'Finland',
+  city: 'Helsinki',
+  age: 250
 }
+const users = [
+  {
+    name: 'Asabeneh',
+    title: 'Programmer',
+    country: 'Finland',
+    city: 'Helsinki',
+    age: 250
+  },
+  {
+    name: 'Eyob',
+    title: 'Teacher',
+    country: 'Sweden',
+    city: 'London',
+    age: 25
+  },
+  {
+    name: 'Asab',
+    title: 'Instructor',
+    country: 'Norway',
+    city: 'Oslo',
+    age: 22
+  },
+  {
+    name: 'Matias',
+    title: 'Developer',
+    country: 'Denmark',
+    city: 'Copenhagen',
+    age: 28
+  }
+]
 
-likeProduct('TV');
+console.group('Names')
+console.log(names)
+console.groupEnd()
 
-console.table(products);
+console.group('Countries')
+console.log(countries)
+console.groupEnd()
 
-
+console.group('Users')
+console.log(user)
+console.log(users)
+console.groupEnd()

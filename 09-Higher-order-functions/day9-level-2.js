@@ -81,8 +81,136 @@ const maxInitialLetter = countries.reduce((accumulator, current) => {
   return accumulator;
 }, {});
 
-console.log(groupByAge);
+console.table(maxInitialLetter);
+
+const daniel = (accumulator, current) => {
+  accumulator[current[0]] = accumulator[current[0]] + 1 || 1
+  console.log(accumulator[current[0]]);
+  return accumulator;
+};
+
+console.log(daniel([], countries));
+
+//Method 1a
 
 
+//Method 2
 
+// countriesMap is an empty object. This object will be used to hold the element and its occurrence count as a key-value pair.
+// let countriesMap = {};
+// let maxValue = 0;
+// let maxCount = 0;
+
+//   // iterate through the first letter of the countries array
+// for (let country of countries[0]) {
+//   //Check if the current element is on the map or not. If not, add this element as key and assign 1 as its value. This means this element occurs one time until now. Else, increment the current value.
+//   if (countriesMap[country] == null) {
+//     countriesMap[country] = 1;
+//   } else {
+//     countriesMap[country]++;
+//   }
+
+//   //5
+//   if (countriesMap[country] > maxCount) {
+//     maxValue = country;
+//     maxCount = countriesMap[country];
+//   }
+// }
+
+// // 6
+// console.log(`Value : ${maxValue}, Count : ${maxCount}`);
+
+// //Method 3
+// // const maxValue = givenArray.reduce((previous, current, i, arr) => {
+// //   if (
+// //     arr.filter(item => item === previous).length >
+// //     arr.filter(item => item === current).length
+// //   ) {
+// //     return previous;
+// //   } else {
+// //     return current;
+// //   }
+// // });
+
+// // console.log(`Maximum occurrence value : ${maxValue}`);
+// let initialValue = 0
+// let sum = [{x: 1}, {x: 2}, {x: 3}].reduce(function (accumulator, currentValue) {
+//     return accumulator + currentValue.x
+// }, 0)
+
+// console.log(sum)
+
+arr = [1,2,3,4,5]
+const summingReducer = function(accumulator, currentValue){
+  return accumulator + currentValue;
+}
+
+
+const counter = (count, action) => {
+  return count + 1;
+};
+
+//console.log(`The output is: ${counter(3)}`);
+
+
+// // const counterReducer2 = (count, action) => {
+// //   switch (action.type) {
+// //     case 'INCREASE':
+// //       return count + 1;
+// //     case 'DECREASE':
+// //       return count - 1;
+// //     default:
+// //       return count;
+// //   }
+// // };
+// // console.log(`The output is: ${counterReducer2( 3, { type: 'INCREASE' })}`);
+
+console.log(`The output is: ${summingReducer(3, 4)}`);
+
+// console.log(`The output, which is the sum is: ${arr.reduce(summingReducer)}`);
+// console.log("============= MAP FUNCTION ==============");
+
+// const x = countries.map(y => y  + " is a country");
+
+// console.log(x);
+// console.log(countries);
+// console.log("========================================");
+
+// console.log("=========== ForEach =============");
+// let kcountry = [];
+// const y = countries.forEach(z => kcountry.push(z + " + is nonsense"));
+// //console.log(y);
+// console.log(kcountry);
+// // countries.forEach(x => console.log(x));
+// // console.log(x);
+
+// // forEach() executes the callback function once for each array element; 
+// // unlike map() or reduce() it always returns the value undefined and is not chainable. 
+// // The typical use case is to execute side effects at the end of a chain.
+
+// const items = ['item1', 'item2', 'item3']
+// const copyItems = []
+// const copyItems2 = []
+
+
+// // before
+// for (let i = 0; i < items.length; i++) {
+//   copyItems2.push(items[i])
+// }
+
+// // after
+// items.forEach(function(item){
+//   copyItems.push(item)
+// })
+
+// console.log(copyItems);
+// console.log(copyItems2);
+
+// let p = [];
+// let n = () => {
+//   for (let i = 0; i < items.length; i++) {
+//     p = copyItems2.push(items[i])
+//   }
+//  return console.log(p);
+// }
 
