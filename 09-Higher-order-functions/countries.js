@@ -1,4 +1,4 @@
-const file_countries = [
+const countriesFile = [
   {
     name: 'Afghanistan',
     capital: 'Kabul',
