@@ -27,3 +27,16 @@
 // })
 
 // console.log(countriesFile);
+
+//Exercise 2
+//Find the ten most spoken languages
+
+// var arr = [5, 5, 5, 2, 2, 2, 2, 2, 9, 4];
+let counts = {};
+
+for (let i = 0; i < countriesFile.length; i++) {
+  let num = countriesFile[i];
+  counts[num] = counts[num] ? counts[num] + 1 : 1;
+} 
+
+console.log(counts);
