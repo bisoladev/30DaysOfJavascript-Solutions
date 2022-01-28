@@ -167,14 +167,15 @@ console.log(cutOut);
 // Question 1
 // 'Love is the best thing in this world. Some found their love and some are still looking for their love.' Count the number of word __love__ in this sentence.
 
-let loveStatement = "Love is the best thing in this world. Some found their love and some \ are still looking for their love.";
+let loveStatement =
+  "Love is the best thing in this world. Some found their love and some  are still looking for their love.";
 
 let lovePattern = /love/gi;
 let loveCount = loveStatement.match(lovePattern).length;
 console.log(loveCount);
 
 // Question 2
-// Use __match()__ to count the number of all __because__ in the following sentence:__'You cannot end a sentence with because because because is a conjunction'__
+// Use match() to count the number of all __because__ in the following sentence:__'You cannot end a sentence with because because because is a conjunction'__
 
 let becausePattern = /because/gi;
 let becauseCount = sentence.match(becausePattern).length;
@@ -183,9 +184,6 @@ console.log(becauseCount);
 //Question 3
 // Clean the following text and find the most frequent word (hint, use replace and regular expressions).
 
-//    ```js
-//        const sentence = '%I $am@% a %tea@cher%, &and& I lo%#ve %te@a@ching%;. The@re $is no@th@ing; &as& mo@re rewarding as educa@ting &and& @emp%o@weri@ng peo@ple. ;I found tea@ching m%o@re interesting tha@n any ot#her %jo@bs. %Do@es thi%s mo@tiv#ate yo@u to be a tea@cher!? %Th#is 30#Days&OfJavaScript &is al@so $the $resu@lt of &love& of tea&ching'
-//    ```
 const badSentence =
   "%I $am@% a %tea@cher%, &and& I lo%#ve %te@a@ching%;.\
  The@re $is no@th@ing; &as& mo@re rewarding as educa@ting &and& @emp%o@weri@ng peo@ple. \
@@ -199,7 +197,7 @@ const at = /@/g;
 const and = /&/g;
 const semicolon = /\;/g;
 
-const replacedSymbols = badSentence
+const cleanedText = badSentence
   .replace(hash, "")
   .replace(percent, "")
   .replace(dollar, "")
@@ -207,13 +205,11 @@ const replacedSymbols = badSentence
   .replace(and, "")
   .replace(semicolon, "");
 
-console.log(replacedSymbols);
+console.log(cleanedText);
 
-console.log(findMostRepeatedWord(replacedSymbols));
-
-function findMostRepeatedWord(replacedSymbols) {
-  let words = replacedSymbols.match(/\w+/g);
-  console.log(words);
+function findMostRepeatedWord(cleanedText) {
+  let words = cleanedText.match(/\w+/g);
+  console.log(`This is the result of the words variable: ${words}`);
 
   let occurances = {};
 
@@ -239,6 +235,8 @@ function findMostRepeatedWord(replacedSymbols) {
 
   return mostRepeatedWord;
 }
+console.log(findMostRepeatedWord(cleanedText));
+console.log(mostRepeatedWord);
 
 // Question 4
 // Calculate the total annual income of the person by extracting the numbers from the following text. 'He earns 5000 euro from salary per month, 10000 euro annual bonus, 15000 euro online courses per month.'
