@@ -1,4 +1,5 @@
 //Exercise 1
+// Write a code which  can give grades to students according to theirs scores
 let studentGrade = prompt('Input score', '');
 let studentGradeInt = parseInt(studentGrade);
 
@@ -17,7 +18,7 @@ if (studentGradeInt >= 80) {
 }  
 
 //Exercise 2
-
+// Check if the season is Autumn, Winter, Spring or Summer using user input
 let userSeasonInput = prompt('Enter month', '');
 let userSeason = userSeasonInput.toLowerCase();
 
@@ -35,7 +36,8 @@ if(userSeason === 'september' || userSeason === 'october' || userSeason === 'nov
     
 
 //Exercise 3
-
+// Check if a day is weekend day or a working day. 
+// Your script will take day as an input.
 let userDayInput = prompt('What is the day today', '');
 let userDay = userDayInput.toLowerCase();
 
