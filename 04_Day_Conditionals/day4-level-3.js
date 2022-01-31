@@ -1,4 +1,5 @@
-1. 
+// 1. Exercise one
+// Write a program which tells the number of days in a month.
 let userCurrentMonth = prompt('Enter month', '');
 let currentMonth = userCurrentMonth.toLowerCase();
 
